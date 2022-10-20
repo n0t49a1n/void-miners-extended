@@ -1,1 +1,0 @@
-# void-miners-extended
