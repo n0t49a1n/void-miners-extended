@@ -1,0 +1,44 @@
+{
+	"entity":
+	[
+		["burner-void-miner", "void-miners-burner-void-miner"],
+		["void-miner-1", "void-miners-electric-void-miner"],
+		["void-miner-2", "void-miners-advanced-void-miner"],
+		["void-miner-3", "void-miners-nuclear-void-miner"],
+		["water-well", "void-miners-water-well"]
+	],
+	"item":
+	[
+		["burner-void-miner", "void-miners-burner-void-miner"],
+		["void-miner-1", "void-miners-electric-void-miner"],
+		["void-miner-2", "void-miners-advanced-void-miner"],
+		["void-miner-3", "void-miners-nuclear-void-miner"],
+		["water-well", "void-miners-water-well"]
+	],
+	"item-group":
+	[
+		["void-miner", "extraction-machine"]
+	],
+	"recipe":
+	[
+		["burner-void-miner", "void-miners-burner-void-miner"],
+		["void-miner-1", "void-miners-electric-void-miner"],
+		["void-miner-2", "void-miners-advanced-void-miner"],
+		["void-miner-3", "void-miners-nuclear-void-miner"],
+		["water-well", "void-miners-water-well"]
+	],
+	"recipe-category":
+	[
+		["simple-void-mining", "void-miners-burner-void-mining"],
+		["electric-void-mining", "void-miners-electric-void-mining"],
+		["advanced-void-mining", "void-miners-advanced-void-mining"],
+		["nuclear-void-mining", "void-miners-nuclear-void-mining"]
+	],
+	"technology":
+	[
+		["electric-void-mining", "void-miners-electric-void-mining"],
+		["advanced-void-mining", "void-miners-advanced-void-mining"],
+		["nuclear-void-mining", "void-miners-nuclear-void-mining"],
+		["void-coal-uranium", "void-miners-nuclear-void-mining-uranium"]
+	]
+}

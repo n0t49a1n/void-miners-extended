@@ -1,0 +1,177 @@
+----------Categorey------------
+data:extend({
+	{
+		type = "recipe-category",
+		name = "void-miners-advanced-void-mining",
+	},
+	{
+		type = "item-group",
+		name = "void-miners-advanced-void-mining",
+		order = "c",
+		icon = "__void-miners-extended__/graphics/item-group/advanced-void-mining.png",
+		icon_size = 64,
+	},
+	{
+		type = "item-subgroup",
+		name = "void-miners-advanced-void-mining",
+		order = "c",
+		icon = "__void-miners-extended__/graphics/item-group/advanced-void-mining.png",
+		icon_size = 64,
+		group = "void-miners-advanced-void-mining",
+	},
+})
+
+----------Iron Ore------------
+local iron_ore = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {
+		{name = "void-miners-fluid-stone-carbon-mixture", amount = 2, type = "fluid"},
+	},
+	name = "void-miners-advanced-void-mining-iron-ore",
+	--order
+	results = {
+		{name = "iron-ore", amount = 1, type = "item"},
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+
+----------Copper Ore------------
+local copper_ore = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {
+		{name = "void-miners-fluid-stone-carbon-mixture", amount = 2, type = "fluid"},
+	},
+	name = "void-miners-advanced-void-mining-copper-ore",
+	--order
+	results = {
+		{name = "copper-ore", amount = 1, type = "item"},
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+
+----------Wood------------
+local wood = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 1,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {
+		{name = "void-miners-fluid-stone-carbon-mixture", amount = 2, type = "fluid"},
+		{name = "water", amount = 10, type = "fluid"},
+	},
+	name = "void-miners-advanced-void-mining-wood",
+	--order
+	results = {
+		{name = "wood", amount = 2, type = "item"},
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+
+----------Raw Fish------------
+local raw_fish = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 1,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {
+		{name = "void-miners-fluid-stone-carbon-mixture", amount = 2, type = "fluid"},
+		{name = "water", amount = 10, type = "fluid"},
+	},
+	name = "void-miners-advanced-void-mining-raw-fish",
+	--order
+	results = {
+		{name = "raw-fish", amount = 1, type = "item"},
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+
+----------Coal------------
+local coal = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {
+		{name = "void-miners-fluid-stone-carbon-mixture", amount = 2, type = "fluid"},
+	},
+	name = "void-miners-advanced-void-mining-coal",
+	--order
+	results = {
+		{name = "coal", amount = 1, type = "item"},
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+
+----------Crude Oil------------
+local crude_oil = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 5,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {
+		{name = "void-miners-fluid-stone-carbon-mixture", amount = 20, type = "fluid"},
+		{name = "water", amount = 100, type = "fluid"},
+	},
+	name = "void-miners-advanced-void-mining-crude-oil",
+	--order
+	results = {
+		{name = "crude-oil", amount = 100, type = "fluid"},
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+
+----------Uranium Ore------------
+local uranium_ore = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 4,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {
+		{name = "void-miners-fluid-stone-carbon-mixture", amount = 2, type = "fluid"},
+		{name = "sulfuric-acid", amount = 1, type = "fluid"},
+	},
+	name = "void-miners-advanced-void-mining-uranium-ore",
+	--order
+	results = {
+		{name = "uranium-ore", amount = 1, type = "item"},
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+
+----------Add To Game------------
+data:extend({
+	iron_ore,
+	copper_ore,
+	wood,
+	raw_fish,
+	coal,
+	crude_oil,
+	uranium_ore,
+})
