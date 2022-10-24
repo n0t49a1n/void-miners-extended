@@ -88,8 +88,8 @@ local space_void_miner_entity = {
 	fast_replaceable_group = "void-miners",
 	crafting_speed = 2,
 	energy_usage = "108MW",
-	result_inventory_size = 100,
-	next_upgrade = "void-miners-deep-void-miner",
+	result_inventory_size = 1,
+	next_upgrade = "void-miners-deep-void-miner-spaced",
 }
 
 ----------Add To Game------------

@@ -82,9 +82,9 @@ local space_void_miner = {
 			{"automation-science-pack", 1},
 			{"logistic-science-pack", 1},
 			{"chemical-science-pack", 1},
-			{"rocket-science-pack", 1},
-			{"astronomic-science-pack-1", 1},
-			{"energy-science-pack-1", 1},
+			{"se-rocket-science-pack", 1},
+			{"se-astronomic-science-pack-1", 1},
+			{"se-energy-science-pack-1", 1},
 		},
 		time = 30
 	},
@@ -107,27 +107,21 @@ local deep_void_miner = {
 			{"automation-science-pack", 1},
 			{"logistic-science-pack", 1},
 			{"chemical-science-pack", 1},
-			{"rocket-science-pack", 1},
-			{"astronomic-science-pack-1", 1},
-			{"energy-science-pack-1", 1},
-			{"material-science-pack-1", 1},
+			{"se-rocket-science-pack", 1},
+			{"se-astronomic-science-pack-1", 1},
+			{"se-energy-science-pack-1", 1},
+			{"se-material-science-pack-1", 1},
 		},
 		time = 30
 	},
 }
-end
-	if mods["space-exploration"] then
 	data:extend({
-	electric_void_miner,
-	refined_void_miner,
-	advanced_void_miner,
 	space_void_miner,
 	deep_void_miner,
 	})
-	else
+	end
 	data:extend({
 	electric_void_miner,
 	refined_void_miner,
 	advanced_void_miner,
 	})
-	end
