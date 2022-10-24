@@ -1,49 +1,59 @@
-----------Tungsten ore------------
-local tungsten_advanced = {
+----------tungsten ore------------
+local tungsten_ore_advanced = {
 	category = "void-miners-advanced-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-fluid-stone-carbon-mixture", amount = 5, type = "fluid"},
-	},
-	name = "void-mining-advanced-void-mining-bztungsten-tungsten",
-	--order
+	ingredients = {},
+	name = "void-mining-advanced-void-mining-tungsten-ore",
+	order = "l",
 	results = {
-		{name = "tungsten-ore", amount = 10, type = "item"}
+		{name = "tungsten-ore", amount = 1, type = "item"}
 	},
 	type = "recipe",
 	subgroup = "void-miners-advanced-void-mining",
 }
-
-local tungsten_nuclear = {
-	category = "void-miners-nuclear-void-mining",
+if mods["space-exploration"] then
+local tungsten_ore_space = {
+	category = "void-miners-space-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
 	ingredients = {},
-	name = "void-mining-nuclear-void-mining-bztungsten-tungsten",
-	--order
+	name = "void-mining-space-void-mining-tungsten-ore",
+	order = "l",
 	results = {
-		{name = "tungsten-ore", amount = 10, type = "item"}
+		{name = "tungsten-ore", amount = 2, type = "item"}
 	},
 	type = "recipe",
-	subgroup = "void-miners-nuclear-void-mining",
+	subgroup = "void-miners-space-void-mining",
 }
-
-----------Nuclear Void Miner------------
-data.raw.recipe["void-miners-nuclear-void-miner"].ingredients = {
-	{"uranium-235", 40},
-	{"titanium-plate", 250},
-	{"processing-unit", 100},
-	{"void-miners-advanced-void-miner", 1},
+local tungsten_ore_deep = {
+	category = "void-miners-deep-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-deep-void-mining-tungsten-ore",
+	order = "l",
+	results = {
+		{name = "tungsten-ore", amount = 4, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-deep-void-mining",
 }
 
 data:extend({
-    tungsten_advanced,
-	tungsten_nuclear,
+	tungsten_ore_space,
+	tungsten_ore_deep,
+})
+end
+data:extend({
+	tungsten_ore_advanced
 })

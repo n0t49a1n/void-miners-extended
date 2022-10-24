@@ -1,69 +1,58 @@
-----------Zirconium ore------------
-local zirconium_electric = {
-	category = "void-miners-electric-void-mining",
-	enabled = true,
-	hide_from_player_crafting = true,
-	energy_required = 2,
-	--icon = "",
-	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-stone-carbon-mixture", amount = 10, type = "item"},
-	},
-	name = "void-mining-electric-void-mining-bzzirconium-zirconium",
-	--order
-	results = {
-		{name = "zircon", amount = 10, type = "item"}
-	},
-	type = "recipe",
-	subgroup = "void-miners-electric-void-mining",
-}
-
-local zirconium_advanced = {
+----------zircon------------
+local zircon_advanced = {
 	category = "void-miners-advanced-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-stone-carbon-mixture", amount = 5, type = "item"},
-	},
-	name = "void-mining-advanced-void-mining-bzzirconium-zirconium",
-	--order
+	ingredients = {},
+	name = "void-mining-advanced-void-mining-zircon",
+	order = "k",
 	results = {
-		{name = "zircon", amount = 10, type = "item"}
+		{name = "zircon", amount = 1, type = "item"}
 	},
 	type = "recipe",
 	subgroup = "void-miners-advanced-void-mining",
 }
-
-local zirconium_nuclear = {
-	category = "void-miners-nuclear-void-mining",
+if mods["space-exploration"] then
+local zircon_space = {
+	category = "void-miners-space-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
 	ingredients = {},
-	name = "void-mining-nuclear-void-mining-bzzirconium-zirconium",
-	--order
+	name = "void-mining-space-void-mining-zircon",
+	order = "k",
 	results = {
-		{name = "zircon", amount = 10, type = "item"}
+		{name = "zircon", amount = 2, type = "item"}
 	},
 	type = "recipe",
-	subgroup = "void-miners-nuclear-void-mining",
+	subgroup = "void-miners-space-void-mining",
 }
-
-----------Nuclear Void Miner------------
-data.raw.recipe["void-miners-nuclear-void-miner"].ingredients = {
-	{"uranium-235", 40},
-	{"titanium-plate", 250},
-	{"processing-unit", 100},
-	{"void-miners-advanced-void-miner", 1},
+local zircon_deep = {
+	category = "void-miners-deep-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-deep-void-mining-zircon",
+	order = "k",
+	results = {
+		{name = "zircon", amount = 4, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-deep-void-mining",
 }
 
 data:extend({
-    zirconium_electric,
-	zirconium_advanced,
-	zirconium_nuclear,
+	zircon_space,
+	zircon_deep,
+})end
+data:extend({
+	zircon_advanced
 })

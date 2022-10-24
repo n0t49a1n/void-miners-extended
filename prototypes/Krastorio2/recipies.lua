@@ -1,49 +1,111 @@
-----------Rare Metals------------
-local raremetals_advanced = {
+----------raw-imersite------------
+local raw_imersite_advanced = {
 	category = "void-miners-advanced-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-fluid-stone-carbon-mixture", amount = 20, type = "fluid"},
-	},
-	name = "void-mining-advanced-void-mining-krastorio2-raw-rare-metals",
-	--order
+	ingredients = {},
+	name = "void-mining-advanced-void-mining-raw-imersite",
+	order = "n",
 	results = {
-		{name = "raw-rare-metals", amount = 10, type = "item"}
+		{name = "raw-imersite", amount = 1, type = "item"}
 	},
 	type = "recipe",
 	subgroup = "void-miners-advanced-void-mining",
 }
-
-local raremetals_nuclear = {
-	category = "void-miners-nuclear-void-mining",
+----------raw-rare-metals------------
+local raw_rare_metals_advanced = {
+	category = "void-miners-advanced-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
 	ingredients = {},
-	name = "void-mining-nuclear-void-mining-krastorio2-raw-rare-metals",
-	--order
+	name = "void-mining-advanced-void-mining-raw-rare-metals",
+	order = "o",
 	results = {
-		{name = "raw-rare-metals", amount = 10, type = "item"}
+		{name = "raw-rare-metals", amount = 1, type = "item"}
 	},
 	type = "recipe",
-	subgroup = "void-miners-nuclear-void-mining",
+	subgroup = "void-miners-advanced-void-mining",
 }
-
-----------Nuclear Void Miner------------
-data.raw.recipe["void-miners-nuclear-void-miner"].ingredients = {
-	{"uranium-235", 40},
-	{"titanium-plate", 250},
-	{"processing-unit", 100},
-	{"void-miners-advanced-void-miner", 1},
+if mods["space-exploration"] then
+----------raw-imersite------------
+local raw_imersite_space = {
+	category = "void-miners-space-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-space-void-mining-raw-imersite",
+	order = "n",
+	results = {
+		{name = "raw-imersite", amount = 2, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-space-void-mining",
 }
-
+local raw_imersite_deep = {
+	category = "void-miners-deep-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-deep-void-mining-raw-imersite",
+	order = "n",
+	results = {
+		{name = "raw-imersite", amount = 4, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-deep-void-mining",
+}
+----------raw-rare-metals------------
+local raw_rare_metals_space = {
+	category = "void-miners-space-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-space-void-mining-raw-rare-metals",
+	order = "o",
+	results = {
+		{name = "raw-rare-metals", amount = 2, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-space-void-mining",
+}
+local raw_rare_metals_deep = {
+	category = "void-miners-deep-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-deep-void-mining-raw-rare-metals",
+	order = "o",
+	results = {
+		{name = "raw-rare-metals", amount = 4, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-deep-void-mining",
+}
 data:extend({
-    raremetals_advanced,
-	raremetals_nuclear,
+	raw_imersite_space,
+	raw_imersite_deep,
+	raw_rare_metals_space,
+	raw_rare_metals_deep,
+})end
+data:extend({
+	raw_imersite_advanced,
+	raw_rare_metals_advanced
 })

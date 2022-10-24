@@ -1,69 +1,75 @@
-----------Lead ore------------
-local lead_electric = {
-	category = "void-miners-electric-void-mining",
-	enabled = true,
-	hide_from_player_crafting = true,
-	energy_required = 2,
-	--icon = "",
-	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-fluid-stone-carbon-mixture", amount = 10, type = "fluid"},
-	},
-	name = "void-mining-electric-void-mining-bzlead-lead",
-	--order
-	results = {
-		{name = "lead-ore", amount = 5, type = "item"}
-	},
-	type = "recipe",
-	subgroup = "void-miners-electric-void-mining",
-}
-
-local lead_advanced = {
-	category = "void-miners-advanced-void-mining",
-	enabled = true,
-	hide_from_player_crafting = true,
-	energy_required = 2,
-	--icon = "",
-	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-fluid-stone-carbon-mixture", amount = 5, type = "fluid"},
-	},
-	name = "void-mining-advanced-void-mining-bzlead-lead",
-	--order
-	results = {
-		{name = "lead-ore", amount = 10, type = "item"}
-	},
-	type = "recipe",
-	subgroup = "void-miners-advanced-void-mining",
-}
-
-local lead_nuclear = {
-	category = "void-miners-nuclear-void-mining",
+----------lead ore------------
+local lead_ore_refined = {
+	category = "void-miners-refined-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
 	ingredients = {},
-	name = "void-mining-nuclear-void-mining-bzlead-lead",
-	--order
+	name = "void-mining-refined-void-mining-lead-ore",
+	order = "g",
 	results = {
-		{name = "lead-ore", amount = 10, type = "item"}
+		{name = "lead-ore", amount = 1, type = "item"}
 	},
 	type = "recipe",
-	subgroup = "void-miners-nuclear-void-mining",
+	subgroup = "void-miners-refined-void-mining",
 }
-
-----------Nuclear Void Miner------------
-data.raw.recipe["void-miners-nuclear-void-miner"].ingredients = {
-	{"uranium-235", 40},
-	{"titanium-plate", 250},
-	{"processing-unit", 100},
-	{"void-miners-advanced-void-miner", 1},
+local lead_ore_advanced = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-advanced-void-mining-lead-ore",
+	order = "g",
+	results = {
+		{name = "lead-ore", amount = 1, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+if mods["space-exploration"] then
+local lead_ore_space = {
+	category = "void-miners-space-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-space-void-mining-lead-ore",
+	order = "g",
+	results = {
+		{name = "lead-ore", amount = 2, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-space-void-mining",
+}
+local lead_ore_deep = {
+	category = "void-miners-deep-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-deep-void-mining-lead-ore",
+	order = "g",
+	results = {
+		{name = "lead-ore", amount = 4, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-deep-void-mining",
 }
 
 data:extend({
-    lead_electric,
-	lead_advanced,
-	lead_nuclear,
+	lead_ore_space,
+	lead_ore_deep,
+})end
+data:extend({
+	lead_ore_refined,
+	lead_ore_advanced,
 })

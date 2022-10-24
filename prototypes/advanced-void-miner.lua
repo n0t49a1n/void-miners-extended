@@ -3,7 +3,7 @@ local advanced_void_miner_item = {
     icon = "__void-miners-extended__/graphics/icons/advanced-void-miner.png",
     icon_size = 64,
     name = "void-miners-advanced-void-miner",
-    order = "c-e",
+    order = "c-c",
     place_result = "void-miners-advanced-void-miner",
     stack_size = 50,
     subgroup = "extraction-machine",
@@ -15,10 +15,10 @@ local advanced_void_miner_recipe = {
 	enabled = false,
 	energy_required = 30,
 	ingredients = {
-		{"advanced-circuit", 50},
+		{"processing-unit", 50},
 		{"steel-plate", 100},
-		{"processing-unit", 10},
-		{"void-miners-electric-void-miner", 1}
+		{"rocket-part", 10},
+		{"void-miners-refined-void-miner", 1}
 	},
 	name = "void-miners-advanced-void-miner",
 	result = "void-miners-advanced-void-miner",
@@ -68,7 +68,7 @@ local advanced_void_miner_entity = {
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 	module_specification = {
-		module_slots = 2
+		module_slots = 3
     },
 	allowed_effects = {
         "consumption",
@@ -80,45 +80,19 @@ local advanced_void_miner_entity = {
 		usage_priority = "secondary-input",
 		emissions_per_minute = 1,
 	},
-	crafting_categories = {"void-miners-burner-void-mining", "void-miners-electric-void-mining", "void-miners-advanced-void-mining"},
-	crafting_speed = 1,
-	energy_usage = "540kW",
+	crafting_categories = {"void-miners-basic-void-mining", "void-miners-refined-void-mining", "void-miners-advanced-void-mining"},
+	crafting_speed = 1.5,
+	energy_usage = "54MW",
 	result_inventory_size = 1,
 	source_inventory_size = 1,
 	fast_replaceable_group = "void-miners",
-	next_upgrade = "void-miners-nuclear-void-miner",
-	fluid_boxes = {
-		{
-			production_type = "input",
-			pipe_picture = assembler2pipepictures(),
-			pipe_covers = pipecoverspictures(),
-			base_area = 1,
-			base_level = -1,
-			pipe_connections = {{type = "input", position = {-1, -2}}},
-			secondary_draw_orders = {north = 1},
-		},
-		{
-			production_type = "input",
-			pipe_picture = assembler2pipepictures(),
-			pipe_covers = pipecoverspictures(),
-			base_area = 1,
-			base_level = -1,
-			pipe_connections = {{type = "input", position = {1, -2}}},
-			secondary_draw_orders = {north = 1},
-		},
-		{
-			production_type = "output",
-			pipe_picture = assembler2pipepictures(),
-			pipe_covers = pipecoverspictures(),
-			base_area = 1,
-			base_level = 1,
-			pipe_connections = {{type = "output", position = {0, 2}}},
-			secondary_draw_orders = {north = -1},
-		},
-	off_when_no_fluid_recipe = true,
-	},
+	next_upgrade = "",
 }
-
+	if mods["space-exploration"] then
+	local nuclear_void_miner_entity = {
+	next_upgrade = "void-miners-space-void-miner",
+	}
+	end
 ----------Add To Game------------
 data:extend({
 	advanced_void_miner_item,

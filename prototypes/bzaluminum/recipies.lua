@@ -1,21 +1,19 @@
-----------Aluminum ore------------
-local aluminum_ore_electric = {
-	category = "void-miners-electric-void-mining",
+----------aluminum ore------------
+local aluminum_ore_refined = {
+	category = "void-miners-refined-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
-	energy_required = 10,
+	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-stone-carbon-mixture", amount = 10, type = "item"},
-	},
-	name = "void-mining-electric-void-mining-bzaluminum-aluminum-ore",
-	--order
+	ingredients = {},
+	name = "void-mining-refined-void-mining-aluminum-ore",
+	order = "h",
 	results = {
-		{name = "aluminum-ore", amount = 5, type = "item"}
+		{name = "aluminum-ore", amount = 1, type = "item"}
 	},
 	type = "recipe",
-	subgroup = "void-miners-electric-void-mining",
+	subgroup = "void-miners-refined-void-mining",
 }
 local aluminum_ore_advanced = {
 	category = "void-miners-advanced-void-mining",
@@ -24,45 +22,54 @@ local aluminum_ore_advanced = {
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-stone-carbon-mixture", amount = 5, type = "item"},
-	},
-	name = "void-mining-advanced-void-mining-bzaluminum-aluminum-ore",
-	--order
+	ingredients = {},
+	name = "void-mining-advanced-void-mining-aluminum-ore",
+	order = "h",
 	results = {
-		{name = "aluminum-ore", amount = 10, type = "item"}
+		{name = "aluminum-ore", amount = 1, type = "item"}
 	},
 	type = "recipe",
 	subgroup = "void-miners-advanced-void-mining",
 }
-
-local aluminum_ore_nuclear = {
-	category = "void-miners-nuclear-void-mining",
+if mods["space-exploration"] then
+local aluminum_ore_space = {
+	category = "void-miners-space-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
 	ingredients = {},
-	name = "void-mining-nuclear-void-mining-bzaluminum-aluminum",
-	--order
+	name = "void-mining-space-void-mining-aluminum-ore",
+	order = "h",
 	results = {
-		{name = "aluminum-ore", amount = 10, type = "item"}
+		{name = "aluminum-ore", amount = 2, type = "item"}
 	},
 	type = "recipe",
-	subgroup = "void-miners-nuclear-void-mining",
+	subgroup = "void-miners-space-void-mining",
 }
-
-----------Nuclear Void Miner------------
-data.raw.recipe["void-miners-nuclear-void-miner"].ingredients = {
-	{"uranium-235", 40},
-	{"titanium-plate", 250},
-	{"processing-unit", 100},
-	{"void-miners-advanced-void-miner", 1},
+local aluminum_ore_deep = {
+	category = "void-miners-deep-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-deep-void-mining-aluminum-ore",
+	order = "h",
+	results = {
+		{name = "aluminum-ore", amount = 4, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-deep-void-mining",
 }
 
 data:extend({
-    aluminum_ore_electric,
-    aluminum_ore_advanced,
-	aluminum_ore_nuclear,
+	aluminum_ore_space,
+	aluminum_ore_deep,
+})end
+data:extend({
+	aluminum_ore_refined,
+	aluminum_ore_advanced
 })

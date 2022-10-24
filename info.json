@@ -1,11 +1,21 @@
 {
     "name": "void-miners-extended",
-    "version": "1.0.7",
+    "version": "2.0.1",
     "title": "Void Miners 2 Extended",
     "author": "n0t49a1n",
     "contact": "",
     "homepage": "https://github.com/n0t49a1n/void-miners-extended",
     "factorio_version": "1.1",
-    "dependencies": ["base >= 1.1", "! void-miners >0.1.0", "? bzaluminium >= 0.1.0",  "? bzcarbon >= 0.1.0",  "? bzlead >= 1.0.0",  "? bztungsten >= 0.5.0",  "? bzzirconium >= 0.5.0",  "? Krastorio2 >= 1.1.0", "bztitanium >= 0.2.0", "? omnimatter_fluid >= 3.18.0", "? leighzerscienceores >= 0.4.0"],
-    "description": "Full Creds to misscattrap. Just adding more ores. The void miners mod adds in a whole new way to create resources on a small or large scale, enabling you to thrive on no resource/resource striken or island maps. Through the power of electricity, you can fabricate basic resources with ever faster and more capable machines. In the beginning you shall be limited to manufacturing the nessecities, but with technology and expansion you will be able to research faster machines and more efficient and more modern technologies. The mod adds in many new technologies and recipes, utilised by the 4 new void miners to the game (Burner, Electric, Advanced and Nuclear)."
+    "dependencies": ["base >= 1.1", 
+	"! void-miners >0.1.0", 
+	"? bzaluminium >= 0.1.0",  
+	"? bzcarbon >= 0.1.0", 
+	"? bzlead >= 1.0.0",
+	"? bztin >= 0.1.6",
+	"? bztitanium >= 0.2.0",
+	"? bztungsten >= 0.5.0", 
+	"? bzzirconium >= 0.5.0", 
+	"? Krastorio2", 
+	"? space-exploration >= 0.5.1"],
+    "description": "The void miners mod adds in a whole new way to create resources on a small or large scale, enabling you to thrive on no resource/resource striken or island maps. Through the power of electricity, you can fabricate basic resources with ever faster and more capable machines. In the beginning you shall be limited to manufacturing the nessecities, but with technology and expansion you will be able to research faster machines and more efficient and more modern technologies. The mod adds in many new technologies and recipes, utilised by the 5 new void miners to the game (Vanilla = Basic, Refined & Advanced) (SE = Space & Deep)."
 }

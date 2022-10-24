@@ -1,68 +1,75 @@
-----------flake graphite------------
-local flakegraphite_electric = {
-	category = "void-miners-electric-void-mining",
-	enabled = true,
-	hide_from_player_crafting = true,
-	energy_required = 2,
-	--icon = "",
-	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-fluid-stone-carbon-mixture", amount = 10, type = "fluid"},
-	},
-	name = "void-mining-electric-void-mining-bzcarbon-flakegraphite",
-	--order
-	results = {
-		{name = "flake-graphite", amount = 5, type = "item"}
-	},
-	type = "recipe",
-	subgroup = "void-miners-electric-void-mining",
-}
-local flakegraphite_advanced = {
-	category = "void-miners-advanced-void-mining",
-	enabled = true,
-	hide_from_player_crafting = true,
-	energy_required = 2,
-	--icon = "",
-	--icon_size= ,
-	ingredients = {
-		{name = "void-miners-fluid-stone-carbon-mixture", amount = 5, type = "fluid"},
-	},
-	name = "void-mining-advanced-void-mining-bzcarbon-flakegraphite",
-	--order
-	results = {
-		{name = "flake-graphite", amount = 10, type = "item"}
-	},
-	type = "recipe",
-	subgroup = "void-miners-advanced-void-mining",
-}
-
-local flakegraphite_nuclear = {
-	category = "void-miners-nuclear-void-mining",
+----------Flake Graphite------------
+local flake_graphite_refined = {
+	category = "void-miners-refined-void-mining",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
 	--icon = "",
 	--icon_size= ,
 	ingredients = {},
-	name = "void-mining-nuclear-void-mining-bzcarbon-flakegraphite",
-	--order
+	name = "void-mining-refined-void-mining-flake-graphite",
+	order = "j",
 	results = {
-		{name = "flake-graphite", amount = 10, type = "item"}
+		{name = "flake-graphite", amount = 1, type = "item"}
 	},
 	type = "recipe",
-	subgroup = "void-miners-nuclear-void-mining",
+	subgroup = "void-miners-refined-void-mining",
 }
-
-----------Nuclear Void Miner------------
-data.raw.recipe["void-miners-nuclear-void-miner"].ingredients = {
-	{"uranium-235", 40},
-	{"titanium-plate", 250},
-	{"processing-unit", 100},
-	{"void-miners-advanced-void-miner", 1},
+local flake_graphite_advanced = {
+	category = "void-miners-advanced-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-advanced-void-mining-flake-graphite",
+	order = "j",
+	results = {
+		{name = "flake-graphite", amount = 2, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-advanced-void-mining",
+}
+if mods["space-exploration"] then
+local flake_graphite_space = {
+	category = "void-miners-space-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-space-void-mining-flake-graphite",
+	order = "j",
+	results = {
+		{name = "flake-graphite", amount = 4, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-space-void-mining",
+}
+local flake_graphite_deep = {
+	category = "void-miners-deep-void-mining",
+	enabled = true,
+	hide_from_player_crafting = true,
+	energy_required = 2,
+	--icon = "",
+	--icon_size= ,
+	ingredients = {},
+	name = "void-mining-deep-void-mining-flake-graphite",
+	order = "j",
+	results = {
+		{name = "flake-graphite", amount = 8, type = "item"}
+	},
+	type = "recipe",
+	subgroup = "void-miners-deep-void-mining",
 }
 
 data:extend({
-    flakegraphite_electric,
-	flakegraphite_advanced,
-	flakegraphite_nuclear,
+	flake_graphite_space,
+	flake_graphite_deep,
+})end
+data:extend({
+	flake_graphite_refined,
+	flake_graphite_advanced
 })

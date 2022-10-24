@@ -1,11 +1,11 @@
---------Electic Void Ore Miner--------
+--------Basic Void Ore Miner--------
 local electric_void_miner = {
 	effects = {
-		{type = "unlock-recipe", recipe = "void-miners-electric-void-miner"},
+		{type = "unlock-recipe", recipe = "void-miners-basic-void-miner"},
 	},
-	icon = "__void-miners-extended__/graphics/technology/electric-void-mining.png",
+	icon = "__void-miners-extended__/graphics/technology/basic-void-mining.png",
 	icon_size = 128,
-	name = "void-miners-electric-void-mining",
+	name = "void-miners-basic-void-mining",
 	--order
 	prerequisites = {"steel-processing", "electronics"},
 	type = "technology",
@@ -14,6 +14,29 @@ local electric_void_miner = {
 		ingredients = {
 			{"automation-science-pack", 1},
 			{"logistic-science-pack", 1},
+		},
+		time = 30
+	},
+}
+
+--------Refined Void Ore Miner--------
+local refined_void_miner = {
+	effects = {
+		{type = "unlock-recipe", recipe = "void-miners-refined-void-miner"},
+	},
+	icon = "__void-miners-extended__/graphics/technology/refined-void-mining.png",
+	icon_size = 128,
+	name = "void-miners-refined-void-mining",
+	--order
+	prerequisites = {"void-miners-basic-void-mining"},
+	type = "technology",
+	unit = {
+		count = 300,
+		ingredients = {
+			{"automation-science-pack", 1},
+			{"logistic-science-pack", 1},
+			{"chemical-science-pack", 1},
+
 		},
 		time = 30
 	},
@@ -28,29 +51,7 @@ local advanced_void_miner = {
 	icon_size = 128,
 	name = "void-miners-advanced-void-mining",
 	--order
-	prerequisites = {"void-miners-electric-void-mining"},
-	type = "technology",
-	unit = {
-		count = 300,
-		ingredients = {
-			{"automation-science-pack", 1},
-			{"logistic-science-pack", 1},
-			{"chemical-science-pack", 1},
-		},
-		time = 30
-	},
-}
-
---------Nuclear Void Ore Miner--------
-local nuclear_void_miner = {
-	effects = {
-		{type = "unlock-recipe", recipe = "void-miners-nuclear-void-miner"},
-	},
-	icon = "__void-miners-extended__/graphics/technology/nuclear-void-mining.png",
-	icon_size = 128,
-	name = "void-miners-nuclear-void-mining",
-	--order
-	prerequisites = {"void-miners-advanced-void-mining", "uranium-processing",},
+	prerequisites = {"void-miners-refined-void-mining"},
 	type = "technology",
 	unit = {
 		count = 1000,
@@ -58,88 +59,75 @@ local nuclear_void_miner = {
 			{"automation-science-pack", 1},
 			{"logistic-science-pack", 1},
 			{"chemical-science-pack", 1},
-			{"production-science-pack", 1},
 		},
 		time = 30
 	},
 }
 
---------Stone Carbon Mixture--------
-local stone_carbon_mixture = {
+	if mods["space-exploration"] then
+--------Space Void Ore Miner--------
+local space_void_miner = {
 	effects = {
-		{type = "unlock-recipe", recipe = "void-miners-stone-wood-mixture"},
-		{type = "unlock-recipe", recipe = "void-miners-stone-coal-mixture"},
+		{type = "unlock-recipe", recipe = "void-miners-space-void-miner"},
 	},
-	icon = "__void-miners-extended__/graphics/technology/stone-carbon-mixture.png",
-	icon_mipmaps = 4,
-	icon_size = 64,
-	name = "void-miners-stone-carbon-mixture",
-	--order
-	prerequisites = {"void-miners-electric-void-mining"},
-	type = "technology",
-	unit = {
-		count = 250,
-		ingredients = {
-			{"automation-science-pack", 1},
-			{"logistic-science-pack", 1},
-		},
-		time = 30
-	},
-}
-
---------Fluid Stone Carbon Mixture--------
-local fluid_stone_carbon_mixture = {
-	effects = {
-		{type = "unlock-recipe", recipe = "void-miners-fluid-stone-crude-oil-mixture"},
-	},
-	icon = "__void-miners-extended__/graphics/technology/fluid-stone-carbon-mixture.png",
-	icon_mipmaps = 4,
-	icon_size = 64,
-	name = "void-miners-fluid-stone-carbon-mixture",
+	icon = "__void-miners-extended__/graphics/technology/space-void-mining.png",
+	icon_size = 128,
+	name = "void-miners-space-void-mining",
 	--order
 	prerequisites = {"void-miners-advanced-void-mining"},
 	type = "technology",
 	unit = {
-		count = 500,
+		count = 1000,
 		ingredients = {
 			{"automation-science-pack", 1},
 			{"logistic-science-pack", 1},
 			{"chemical-science-pack", 1},
+			{"rocket-science-pack", 1},
+			{"astronomic-science-pack-1", 1},
+			{"energy-science-pack-1", 1},
 		},
 		time = 30
 	},
 }
 
---------Uranium 235 Mining--------
-local uranium_235_mining = {
+--------Deep Void Ore Miner--------
+local deep_void_miner = {
 	effects = {
-		{type = "unlock-recipe", recipe = "void-miners-nuclear-void-mining-uranium-235"},
+		{type = "unlock-recipe", recipe = "void-miners-deep-void-miner"},
 	},
-	icon = "__void-miners-extended__/graphics/technology/uranium-235-mining.png",
-	icon_mipmaps = 4,
-	icon_size = 64,
-	name = "void-miners-nuclear-void-mining-uranium",
+	icon = "__void-miners-extended__/graphics/technology/deep-void-mining.png",
+	icon_size = 128,
+	name = "void-miners-deep-void-mining",
 	--order
-	prerequisites = {"void-miners-nuclear-void-mining", "kovarex-enrichment-process"},
+	prerequisites = {"void-miners-space-void-mining"},
 	type = "technology",
 	unit = {
-		count = 2000,
+		count = 1000,
 		ingredients = {
 			{"automation-science-pack", 1},
 			{"logistic-science-pack", 1},
 			{"chemical-science-pack", 1},
-			{"production-science-pack", 1},
-			{"utility-science-pack", 1},
+			{"rocket-science-pack", 1},
+			{"astronomic-science-pack-1", 1},
+			{"energy-science-pack-1", 1},
+			{"material-science-pack-1", 1},
 		},
 		time = 30
 	},
 }
-
-data:extend({
+end
+	if mods["space-exploration"] then
+	data:extend({
 	electric_void_miner,
+	refined_void_miner,
 	advanced_void_miner,
-	nuclear_void_miner,
-	stone_carbon_mixture,
-	fluid_stone_carbon_mixture,
-	uranium_235_mining,
-})
+	space_void_miner,
+	deep_void_miner,
+	})
+	else
+	data:extend({
+	electric_void_miner,
+	refined_void_miner,
+	advanced_void_miner,
+	})
+	end

@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 2022-10-23
+  Changes:
+	-removal of old mods (omnifluid & scienceores)
+	-removal of classic mode
+	-removal of catalyst, all new power requirements are very savage
+	-removal of fluids (new mod soon)
+	-rename of current void miners  (basic, refined, advanced)
+	-add of new space ex miners (space & deep)
+	-all new craft and research requirement
+	-new compatibility with every BZ mod separately
+	-updated to include all K2 & SE resources separately
+	-enabling ore ordering in recipe select
+---------------------------------------------------------------------------------------------------
 Version: 1.0.7
 Date: 2022-10-21
   Changes:
