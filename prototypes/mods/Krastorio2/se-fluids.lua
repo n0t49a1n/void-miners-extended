@@ -1,0 +1,4 @@
+--basic
+--matter, mineral-water, dirty-water
+--advanced
+--hydrogen, chlorine, oxygen, nitrogen, ammonia, nitric-acid, hydrogen-chloride, biomethanol, heavy-water

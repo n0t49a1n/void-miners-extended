@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 2022-10-30
+  Changes:
+	-Major rewrite
+	-re introduced wells
+	-cleanup / seperation of mods and vanilla
+	-reduced groups for ease of upgrade / downgrade
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2022-10-27
+  Changes:
+	-adding new void well
+	-added support for bzgas
+---------------------------------------------------------------------------------------------------
 Version: 2.0.3
 Date: 2022-10-24
   Changes:

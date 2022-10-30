@@ -253,8 +253,63 @@ local naquium_ore_deep = {
 	type = "recipe",
 	subgroup = "void-miners-deep-void-mining",
 }
-
+local space_void_well = {
+	enabled = true,
+	energy_required = 2,
+	ingredients = {
+		{"se-quantum-processor", 20},
+		{"se-beryllium-plate", 50},
+		{"se-iridium-ingot", 50},
+		{"advanced_void_well", 1},
+	},
+	name = "space_void_well",
+	result = "space_void_well",
+	type = "recipe",
+}
+local deep_void_well = {
+	enabled = true,
+	energy_required = 2,
+	ingredients = {
+		{"se-naquium-processor", 5},
+		{"se-holmium-plate", 20},
+		{"se-naquium-ingot", 5},
+		{"space_void_well", 1},
+	},
+	name = "deep_void_well",
+	result = "deep_void_well",
+	type = "recipe",
+}
+local space_void_miner = {
+	enabled = true,
+	energy_required = 2,
+	ingredients = {
+		{"se-quantum-processor", 20},
+		{"se-beryllium-plate", 50},
+		{"se-iridium-ingot", 50},
+		{"advanced_void_miner", 1},
+	},
+	name = "space_void_miner",
+	result = "space_void_miner",
+	type = "recipe",
+}
+local deep_void_miner = {
+	enabled = true,
+	energy_required = 2,
+	ingredients = {
+		{"se-naquium-processor", 5},
+		{"se-holmium-plate", 20},
+		{"se-naquium-ingot", 5},
+		{"space_void_miner", 1},
+	},
+	name = "deep_void_miner",
+	result = "deep_void_ miner",
+	type = "recipe",
+}
 data:extend({
+	space_void_miner,
+	deep_void_miner,
+	space_void_well,
+	deep_void_well,
 	vulcanite_space,
 	vulcanite_deep,
 	beryllium_ore_space,
