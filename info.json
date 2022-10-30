@@ -1,6 +1,6 @@
 {
     "name": "void-miners-extended",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "title": "Void Miners 2 Extended",
     "author": "n0t49a1n",
     "contact": "",
@@ -8,7 +8,7 @@
     "factorio_version": "1.1",
     "dependencies": ["base >= 1.1", 
 	"! void-miners >0.1.0", 
-	"? bzaluminium >= 0.1.0",  
+	"? bzaluminium >= 0.4.10",  
 	"? bzcarbon >= 0.1.0", 
 	"? bzlead >= 1.0.0",
 	"? bztin >= 0.1.6",
