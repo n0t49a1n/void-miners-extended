@@ -19,7 +19,7 @@ local deep_void_miner = {
     type = "item",
 }
 local space_void_well = {
-    icon = "__void-miners-extended__/graphics/icons/space-void-well.png",
+    icon = "__void-miners-extended__/graphics/icons/void-well.png",
     icon_size = 32,
     name = "space_void_well",
     order = "c-c",
@@ -29,7 +29,7 @@ local space_void_well = {
     type = "item"
 }
 local deep_void_well = {
-    icon = "__void-miners-extended__/graphics/icons/deep-void-well.png",
+    icon = "__void-miners-extended__/graphics/icons/void-well.png",
     icon_size = 32,
     name = "deep_void_well",
     order = "c-c",

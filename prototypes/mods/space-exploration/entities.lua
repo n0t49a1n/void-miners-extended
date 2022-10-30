@@ -1,13 +1,13 @@
 local space_void_well = {
 	name = "space_void_well",
-	icon = "__void-miners-extended__/graphics/icons/space-void-well.png",
+	icon = "__void-miners-extended__/graphics/icons/void-well.png",
 	icon_size = 32,
 	--order
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "space_void_well"},
 	animation = {
-		filename = "__void-miners-extended__/graphics/entity/space-void-well/space-void-well.png",
+		filename = "__void-miners-extended__/graphics/entity/void-well/void-well.png",
 		priority = "high",
 		height = 64,
 		width = 64,
@@ -52,18 +52,18 @@ local space_void_well = {
 	fast_replaceable_group = "void-miners",
 	module_specification = nil,
 	allowed_effects = nil,
-	next_upgrade = "",
+	next_upgrade = "deep_void_well",
 }
 local deep_void_well = {
 	name = "deep_void_well",
-	icon = "__void-miners-extended__/graphics/icons/deep-void-well.png",
+	icon = "__void-miners-extended__/graphics/icons/void-well.png",
 	icon_size = 32,
 	--order
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "deep_void_well"},
 	animation = {
-		filename = "__void-miners-extended__/graphics/entity/deep-void-well/deep-void-well.png",
+		filename = "__void-miners-extended__/graphics/entity/void-well/void-well.png",
 		priority = "high",
 		height = 64,
 		width = 64,
@@ -173,7 +173,7 @@ local deep_void_well = {
 	crafting_speed = 2,
 	energy_usage = "108MW",
 	result_inventory_size = 1,
-	next_upgrade = "deep_void_miner_spaced",
+	next_upgrade = "deep_void_miner",
 }
 local deep_void_miner = {
 	name = "deep_void_miner",
