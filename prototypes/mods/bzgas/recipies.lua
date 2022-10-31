@@ -1,6 +1,6 @@
 ----------Gas------------
 local gas = {
-	category = "void-well-mining",
+	category = "void-well-mining-bz",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,

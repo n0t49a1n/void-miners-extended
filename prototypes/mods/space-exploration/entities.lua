@@ -14,6 +14,7 @@ local space_void_well = {
 		frame_count = 1,
 		line_length = 1,
 	},
+	se_allow_in_space = true,
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
 	repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg", volume = 1},
@@ -31,6 +32,13 @@ local space_void_well = {
 	flags = {"placeable-player", "player-creation"},
 	collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
 	selection_box = {{-1, -1}, {1, 1}},
+	collision_mask = {
+      "water-tile",
+      "ground-tile",
+      "item-layer",
+      "object-layer",
+      "player-layer",
+    },
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
@@ -46,7 +54,7 @@ local space_void_well = {
             position = {0.5, 1.5}
         }}
     }},
-	crafting_categories = {"void-well-mining"},
+	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-k2","void-well-mining-se"},
 	crafting_speed = 2,
 	energy_usage = "108MW",
 	fast_replaceable_group = "void-miners",
@@ -70,6 +78,7 @@ local deep_void_well = {
 		frame_count = 1,
 		line_length = 1,
 	},
+	se_allow_in_space = true,
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
 	repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg", volume = 1},
@@ -87,6 +96,13 @@ local deep_void_well = {
 	flags = {"placeable-player", "player-creation"},
 	collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
 	selection_box = {{-1, -1}, {1, 1}},
+	collision_mask = {
+      "water-tile",
+      "ground-tile",
+      "item-layer",
+      "object-layer",
+      "player-layer",
+    },
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
@@ -102,7 +118,7 @@ local deep_void_well = {
             position = {0.5, 1.5}
         }}
     }},
-	crafting_categories = {"void-well-mining"},
+	crafting_categories = {"void-well-mining-k2","void-well-mining-se"},
 	crafting_speed = 3,
 	energy_usage = "216MW",
 	fast_replaceable_group = "void-miners",
@@ -168,7 +184,7 @@ local deep_void_well = {
 		usage_priority = "secondary-input",
 		emissions_per_minute = 1,
 	},
-	crafting_categories = {"void-mining"},
+	crafting_categories = {"void-mining","void-mining-bz","void-mining-k2","void-mining-se"},
 	fast_replaceable_group = "void-miners",
 	crafting_speed = 2,
 	energy_usage = "108MW",
@@ -233,7 +249,7 @@ local deep_void_miner = {
 		usage_priority = "secondary-input",
 		emissions_per_minute = 1,
 	},
-	crafting_categories = {"void-mining"},
+	crafting_categories = {"void-mining-k2","void-mining-se"},
 	fast_replaceable_group = "void-miners",
 	crafting_speed = 2.5,
 	energy_usage = "216MW",

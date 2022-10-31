@@ -46,7 +46,7 @@ local basic_void_well = {
             position = {0.5, 1.5}
         }}
     }},
-	crafting_categories = {"void-well-mining"},
+	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-k2"},
 	crafting_speed = 0.25,
 	energy_usage = "13MW",
 	fast_replaceable_group = "void-miners",
@@ -102,7 +102,7 @@ local refined_void_well = {
             position = {0.5, 1.5}
         }}
     }},
-	crafting_categories = {"void-well-mining"},
+	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-k2"},
 	crafting_speed = 0.5,
 	energy_usage = "27MW",
 	fast_replaceable_group = "void-miners",
@@ -158,7 +158,7 @@ local advanced_void_well = {
             position = {0.5, 1.5}
         }}
     }},
-	crafting_categories = {"void-well-mining"},
+	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-k2"},
 	crafting_speed = 0.75,
 	energy_usage = "54MW",
 	fast_replaceable_group = "void-miners",
@@ -212,7 +212,7 @@ local basic_void_miner = {
 		usage_priority = "secondary-input",
 		emissions_per_minute = 1,
 	},
-	crafting_categories = {"void-mining"},
+	crafting_categories = {"void-mining","void-mining-bz","void-mining-k2"},
 	crafting_speed = 0.25,
 	energy_usage = "13MW",
 	result_inventory_size = 1,
@@ -274,7 +274,7 @@ local refined_void_miner = {
 		usage_priority = "secondary-input",
 		emissions_per_minute = 1,
 	},
-	crafting_categories = {"void-mining"},
+	crafting_categories = {"void-mining","void-mining-bz","void-mining-k2"},
 	crafting_speed = 0.5,
 	energy_usage = "27MW",
 	result_inventory_size = 1,
@@ -336,7 +336,7 @@ local advanced_void_miner = {
 		usage_priority = "secondary-input",
 		emissions_per_minute = 1,
 	},
-	crafting_categories = {"void-mining"},
+	crafting_categories = {"void-mining","void-mining-bz","void-mining-k2"},
 	crafting_speed = 0.75,
 	energy_usage = "54MW",
 	result_inventory_size = 1,

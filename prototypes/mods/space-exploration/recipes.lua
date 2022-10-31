@@ -1,6 +1,6 @@
 -----------vulcanite------------
 local vulcanite = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -17,7 +17,7 @@ local vulcanite = {
 }
 -----------Beryllium
 local beryllium_ore = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -34,7 +34,7 @@ local beryllium_ore = {
 }
 -----------vitamelange
 local vitamelange = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -51,7 +51,7 @@ local vitamelange = {
 }
 -----------cryonite
 local cryonite = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -68,7 +68,7 @@ local cryonite = {
 }
 -----------methane ice
 local methane_ice = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -85,7 +85,7 @@ local methane_ice = {
 }
 -----------water ice
 local water_ice = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -102,7 +102,7 @@ local water_ice = {
 }
 -----------iridium
 local iridium_ore = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 10,
@@ -119,7 +119,7 @@ local iridium_ore = {
 }
 -----------holmium
 local holmium_ore = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 10,
@@ -136,7 +136,7 @@ local holmium_ore = {
 }
 -----------naquium
 local naquium_ore = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 20,
@@ -204,7 +204,7 @@ local deep_void_miner = {
 	type = "recipe",
 }
 local methane_gas = {
-	category = "void-mining",
+	category = "void-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -218,7 +218,7 @@ local methane_gas = {
 	subgroup = "void-well-mining",
 }
 local liquid_rocket_fuel = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -232,7 +232,7 @@ local liquid_rocket_fuel = {
 	subgroup = "void-well-mining",
 }
 local space_coolant_hot = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -246,7 +246,7 @@ local space_coolant_hot = {
 	subgroup = "void-well-mining",
 }
 local space_coolant_warm = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -260,7 +260,7 @@ local space_coolant_warm = {
 	subgroup = "void-well-mining",
 }
 local space_coolant_cold = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -274,7 +274,7 @@ local space_coolant_cold = {
 	subgroup = "void-well-mining",
 }
 local space_coolant_supercooled = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -288,7 +288,7 @@ local space_coolant_supercooled = {
 	subgroup = "void-well-mining",
 }
 local bio_sludge = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -302,7 +302,7 @@ local bio_sludge = {
 	subgroup = "void-well-mining",
 }
 local contaminated_bio_sludge = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -316,7 +316,7 @@ local contaminated_bio_sludge = {
 	subgroup = "void-well-mining",
 }
 local chemical_gel = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -330,7 +330,7 @@ local chemical_gel = {
 	subgroup = "void-well-mining",
 }
 local nutrient_gel = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -344,7 +344,7 @@ local nutrient_gel = {
 	subgroup = "void-well-mining",
 }
 local neural_gel = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -358,7 +358,7 @@ local neural_gel = {
 	subgroup = "void-well-mining",
 }
 local neural_gel_2 = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -372,7 +372,7 @@ local neural_gel_2 = {
 	subgroup = "void-well-mining",
 }
 local plasma_stream = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -386,7 +386,7 @@ local plasma_stream = {
 	subgroup = "void-well-mining",
 }
 local ion_stream = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -400,7 +400,7 @@ local ion_stream = {
 	subgroup = "void-well-mining",
 }
 local proton_stream = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -414,7 +414,7 @@ local proton_stream = {
 	subgroup = "void-well-mining",
 }
 local particle_stream = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -428,7 +428,7 @@ local particle_stream = {
 	subgroup = "void-well-mining",
 }
 local antimatter_stream = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -442,7 +442,7 @@ local antimatter_stream = {
 	subgroup = "void-well-mining",
 }
 local cryonite_slush = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -456,7 +456,7 @@ local cryonite_slush = {
 	subgroup = "void-well-mining",
 }
 local pyroflux = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -470,7 +470,7 @@ local pyroflux = {
 	subgroup = "void-well-mining",
 }
 local vitalic_acid = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -485,7 +485,7 @@ local vitalic_acid = {
 }
 
 local molten_iron = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -499,7 +499,7 @@ local molten_iron = {
 	subgroup = "void-well-mining",
 }
 local molten_copper = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -513,7 +513,7 @@ local molten_copper = {
 	subgroup = "void-well-mining",
 }
 local molten_holmium = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -527,7 +527,7 @@ local molten_holmium = {
 	subgroup = "void-well-mining",
 }
 local molten_beryllium = {
-	category = "void-well-mining",
+	category = "void-well-mining-se",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,

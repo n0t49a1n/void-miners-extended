@@ -1,6 +1,6 @@
 ----------zircon------------
 local zircon = {
-	category = "void-mining",
+	category = "void-mining-bz",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 10,

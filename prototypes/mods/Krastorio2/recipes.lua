@@ -1,6 +1,6 @@
 ----------raw-imersite------------
 local raw_imersite = {
-	category = "void-mining",
+	category = "void-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -17,7 +17,7 @@ local raw_imersite = {
 }
 ----------raw-rare-metals------------
 local raw_rare_metals = {
-	category = "void-mining",
+	category = "void-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
@@ -37,7 +37,7 @@ data:extend({
 	raw_rare_metals
 })
 local mineral_water = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -53,7 +53,7 @@ local mineral_water = {
 	subgroup = "void-well-mining",
 }
 local dirty_water = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -69,7 +69,7 @@ local dirty_water = {
 	subgroup = "void-well-mining",
 }
 local matter = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 20,
@@ -86,7 +86,7 @@ local matter = {
 }
 
 local hydrogen = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -102,7 +102,7 @@ local hydrogen = {
 	subgroup = "void-well-mining",
 }
 local chlorine = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -118,7 +118,7 @@ local chlorine = {
 	subgroup = "void-well-mining",
 }
 local oxygen = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -134,7 +134,7 @@ local oxygen = {
 	subgroup = "void-well-mining",
 }
 local nitrogen = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -150,7 +150,7 @@ local nitrogen = {
 	subgroup = "void-well-mining",
 }
 local ammonia = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -166,7 +166,7 @@ local ammonia = {
 	subgroup = "void-well-mining",
 }
 local nitric_acid = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -182,7 +182,7 @@ local nitric_acid = {
 	subgroup = "void-well-mining",
 }
 local hydrogen_chloride = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -198,7 +198,7 @@ local hydrogen_chloride = {
 	subgroup = "void-well-mining",
 }
 local biomethanol = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -214,7 +214,7 @@ local biomethanol = {
 	subgroup = "void-well-mining",
 }
 local heavy_water = {
-	category = "void-well-mining",
+	category = "void-well-mining-k2",
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
