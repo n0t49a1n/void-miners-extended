@@ -135,6 +135,7 @@ local basic_void_well = {
 		{"iron-gear-wheel", 10},
 		{"offshore-pump", 5}
 	},
+	order = "a",
 	name = "basic_void_well",
 	result = "basic_void_well",
 	type = "recipe",
@@ -148,6 +149,7 @@ local refined_void_well = {
 		{"electric-engine-unit", 50},
 		{"basic_void_well", 5}
 	},
+	order = "b",
 	name = "refined_void_well",
 	result = "refined_void_well",
 	type = "recipe",
@@ -158,9 +160,10 @@ local advanced_void_well = {
 	ingredients = {
 		{"processing-unit", 50},
 		{"steel-plate", 100},
-		{"rocket-part", 10},
+		{"rocket-control-unit", 10},
 		{"refined_void_well", 1}
 	},
+	order = "c",
 	name = "advanced_void_well",
 	result = "advanced_void_well",
 	type = "recipe",
@@ -281,6 +284,7 @@ local basic_void_miner = {
 		{"iron-gear-wheel", 10},
 		{"electric-mining-drill", 5}
 	},
+	order = "a",
 	name = "basic_void_miner",
 	result = "basic_void_miner",
 	type = "recipe",
@@ -294,6 +298,7 @@ local refined_void_miner = {
 		{"electric-engine-unit", 50},
 		{"basic_void_miner", 1},
 	},
+	order = "b",
 	name = "refined_void_miner",
 	result = "refined_void_miner",
 	type = "recipe",
@@ -304,9 +309,10 @@ local advanced_void_miner = {
 	ingredients = {
 		{"processing-unit", 50},
 		{"steel-plate", 100},
-		{"rocket-part", 10},
+		{"rocket-control-unit", 10},
 		{"refined_void_miner", 1}
 	},
+	order = "c",
 	name = "advanced_void_miner",
 	result = "advanced_void_miner",
 	type = "recipe",

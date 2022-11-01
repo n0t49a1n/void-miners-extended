@@ -1,3 +1,14 @@
+Version: 2.2.5
+Date: 2022-11-2
+  Changes:
+	-corrected advanced well/miner recipe to rcu instead of error rocket parts (Upsidedowneye)
+	-corrected recipe orders for crafting
+---------------------------------------------------------------------------------------------------
+Version: 2.2.4
+Date: 2022-10-31
+  Changes:
+	-Separating categories and groups
+	-General clean up
 ---------------------------------------------------------------------------------------------------
 Version: 2.2.3
 Date: 2022-10-30
