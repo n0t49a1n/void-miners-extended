@@ -1,6 +1,6 @@
 {
     "name": "void-miners-extended",
-    "version": "2.2.5",
+    "version": "2.3.0",
     "title": "Void Miners 2 Extended",
     "author": "n0t49a1n",
     "contact": "",
@@ -17,6 +17,7 @@
 	"? bzzirconium >= 0.6.12", 
 	"? bzgas >= 0.1.3", 
 	"? Krastorio2", 
-	"? space-exploration >= 0.5.1"],
-    "description": "The void miners mod adds in a whole new way to create resources on a small or large scale, enabling you to thrive on no resource/resource striken or island maps. Through the power of electricity, you can fabricate basic resources with ever faster and more capable machines. In the beginning you shall be limited to manufacturing the nessecities, but with technology and expansion you will be able to research faster machines and more efficient and more modern technologies. The mod adds in many new technologies and recipes, utilised by the 5 new void miners to the game (Vanilla = Basic, Refined & Advanced) (SE = Space & Deep)."
+	"? space-exploration >= 0.5.1",
+	"? pypostprocessing"],
+    "description": "The void miners mod adds in a whole new way to create resources on a small or large scale, enabling you to thrive on no resource/resource striken or island maps. Through the power of electricity, you can fabricate basic resources with ever faster and more capable machines. In the beginning you shall be limited to manufacturing the nessecities, but with technology and expansion you will be able to research faster machines and more efficient and more modern technologies. The mod adds in many new technologies and recipes, utilised by the 6 new void miners to the game (Vanilla = Basic, Refined & Advanced) (PY = Pyanodons) (SE = Space & Deep)."
 }

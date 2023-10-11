@@ -1,3 +1,10 @@
+Version: 2.3.0
+Date: 2023-10-11
+  Changes:
+	-expanded support for Pyanodons (WIP only as items and entities are ok just need actual resources)
+	-entire new tier for pyan including a new miner colour
+	-corrected missing space from local
+---------------------------------------------------------------------------------------------------
 Version: 2.2.5
 Date: 2022-11-2
   Changes:
@@ -58,7 +65,7 @@ Date: 2022-10-23
 	-removal of old mods (omnifluid & scienceores)
 	-removal of classic mode
 	-removal of catalyst, all new power requirements are very savage
-	-removal of fluids (new mod soon)
+	-removal of fluids
 	-rename of current void miners  (basic, refined, advanced)
 	-add of new space ex miners (space & deep)
 	-all new craft and research requirement

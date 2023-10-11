@@ -37,3 +37,11 @@ if mods["space-exploration"] then
 	require("prototypes.mods.space-exploration.entities") --Entities
 	require("prototypes.mods.space-exploration.recipes") --Recipes
 end
+
+--PY
+if mods["pypostprocessing"] then
+	require("prototypes.mods.pyanodons.technology") --Technology
+	require("prototypes.mods.pyanodons.items") -- Items
+	require("prototypes.mods.pyanodons.entities") --Entities
+	require("prototypes.mods.pyanodons.recipes") --Recipes
+end

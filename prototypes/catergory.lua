@@ -24,6 +24,12 @@ data:extend({
 		icon_size = 64,
 	},
 	{
+		type = "recipe-category",
+		name = "void-well-mining-py",
+		icon = "__void-miners-extended__/graphics/item-group/void-well-mining.png",
+		icon_size = 64,
+	},	
+	{
 		type = "item-group",
 		name = "void-well-mining",
 		order = "a",
@@ -60,6 +66,12 @@ data:extend({
 	{
 		type = "recipe-category",
 		name = "void-mining-se",
+		icon = "__void-miners-extended__/graphics/item-group/void-mining.png",
+		icon_size = 64,
+	},
+	{
+		type = "recipe-category",
+		name = "void-mining-py",
 		icon = "__void-miners-extended__/graphics/item-group/void-mining.png",
 		icon_size = 64,
 	},
