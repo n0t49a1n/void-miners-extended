@@ -6,14 +6,14 @@ local basic_void_well = {
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "basic_void_well"},
-	animation = {
+	graphics_set = { animation = {
 		filename = "__void-miners-extended__/graphics/entity/void-well/void-well.png",
 		priority = "high",
 		height = 64,
 		width = 64,
 		frame_count = 1,
 		line_length = 1,
-	},
+	}},
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
 	repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg", volume = 1},
@@ -62,14 +62,14 @@ local refined_void_well = {
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "refined_void_well"},
-	animation = {
+	graphics_set = { animation = {
 		filename = "__void-miners-extended__/graphics/entity/void-well/void-well.png",
 		priority = "high",
 		height = 64,
 		width = 64,
 		frame_count = 1,
 		line_length = 1,
-	},
+	}},
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
 	repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg", volume = 1},
@@ -118,14 +118,14 @@ local advanced_void_well = {
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "advanced_void_well"},
-	animation = {
+	graphics_set = { animation = {
 		filename = "__void-miners-extended__/graphics/entity/void-well/void-well.png",
 		priority = "high",
 		height = 64,
 		width = 64,
 		frame_count = 1,
 		line_length = 1,
-	},
+	}},
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
 	repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg", volume = 1},
@@ -173,7 +173,7 @@ local basic_void_miner = {
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "basic_void_miner"},
-	animation = {
+	graphics_set = { animation = {
 		animation_speed = 0.75,
 		filename = "__void-miners-extended__/graphics/entity/basic-void-miner/basic-void-miner.png",
 		priority = "high",
@@ -194,7 +194,7 @@ local basic_void_miner = {
 		line_length = 8,
 		scale = 0.9,
 		shift = {1.65, -0.175}
-	},
+	}},
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
 	repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg", volume = 1},
@@ -227,7 +227,7 @@ local refined_void_miner = {
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "refined_void_miner"},
-	animation = {
+	graphics_set = { animation = {
 		animation_speed = 0.75,
 		filename = "__void-miners-extended__/graphics/entity/refined-void-miner/refined-void-miner.png",
 		priority = "high",
@@ -248,7 +248,7 @@ local refined_void_miner = {
 		line_length = 8,
 		scale = 0.9,
 		shift = {1.65, -0.175}
-	},
+	}},
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
 	repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg", volume = 1},
@@ -289,7 +289,7 @@ local advanced_void_miner = {
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "advanced_void_miner"},
-	animation = {
+	graphics_set = { animation = {
 		animation_speed = 0.75,
 		filename = "__void-miners-extended__/graphics/entity/advanced-void-miner/advanced-void-miner.png",
 		priority = "high",
@@ -310,7 +310,7 @@ local advanced_void_miner = {
 		line_length = 8,
 		scale = 0.9,
 		shift = {1.65, -0.175}
-	},
+	}},
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
 	repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg", volume = 1},

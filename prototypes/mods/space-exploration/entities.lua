@@ -6,14 +6,14 @@ local se_void_well = {
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "se_void_well"},
-	animation = {
+	graphics_set = { animation = {
 		filename = "__void-miners-extended__/graphics/entity/void-well/void-well.png",
 		priority = "high",
 		height = 64,
 		width = 64,
 		frame_count = 1,
 		line_length = 1,
-	},
+	}},
 	se_allow_in_space = true,
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
@@ -64,14 +64,14 @@ local deep_void_well = {
 	type = "assembling-machine",
 	max_health = 300,
 	minable = {mining_time = 0.3, result = "deep_void_well"},
-	animation = {
+	graphics_set = { animation = {
 		filename = "__void-miners-extended__/graphics/entity/void-well/void-well.png",
 		priority = "high",
 		height = 64,
 		width = 64,
 		frame_count = 1,
 		line_length = 1,
-	},
+	}},
 	se_allow_in_space = true,
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
@@ -121,7 +121,7 @@ local deep_void_well = {
 	type = "assembling-machine",
 	max_health = 500,
 	minable = {mining_time = 0.3, result = "se_void_miner"},
-	animation = {
+	graphics_set = { animation = {
 		animation_speed = 0.9,
 		filename = "__void-miners-extended__/graphics/entity/se-void-miner/se-void-miner.png",
 		priority = "high",
@@ -142,7 +142,7 @@ local deep_void_well = {
 		line_length = 8,
 		scale = 0.9,
 		shift = {1.65, -0.175}
-	},
+	}},
 	se_allow_in_space = true,
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
@@ -180,7 +180,7 @@ local deep_void_miner = {
 	type = "assembling-machine",
 	max_health = 500,
 	minable = {mining_time = 0.3, result = "deep_void_miner"},
-	animation = {
+	graphics_set = { animation = {
 		animation_speed = 0.9,
 		filename = "__void-miners-extended__/graphics/entity/deep-void-miner/deep-void-miner.png",
 		priority = "high",
@@ -201,7 +201,7 @@ local deep_void_miner = {
 		line_length = 8,
 		scale = 0.9,
 		shift = {1.65, -0.175}
-	},
+	}},
 	se_allow_in_space = true,
 	open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.5},
 	close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.5},
