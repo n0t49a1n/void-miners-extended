@@ -47,3 +47,33 @@ for name, recipe in pairs(data.raw.recipe) do
         end
     end
 end
+
+if settings.startup["void-miners-hardmode"] and settings.startup["void-miners-hardmode"].value then
+	-- Double power draw for every tier, including optional integrations.
+	for name, machine in pairs(data.raw["assembling-machine"]) do
+		if name:find("void_", 1, true) and machine.energy_usage then
+			local amount, unit = machine.energy_usage:match("^(%d+%.?%d*)(%a+)$")
+			if amount and unit then
+				machine.energy_usage = tostring(tonumber(amount) * 2) .. unit
+			end
+		end
+	end
+
+	-- Double ingredients only on recipes that craft a void miner or well.
+	for _, recipe in pairs(data.raw.recipe) do
+		local crafts_void_machine = false
+		for _, result in pairs(recipe.results or {}) do
+			if result.type == "item" and result.name:find("void_", 1, true) then
+				crafts_void_machine = true
+				break
+			end
+		end
+		if crafts_void_machine then
+			for _, ingredient in pairs(recipe.ingredients or {}) do
+				if ingredient.amount then
+					ingredient.amount = ingredient.amount * 2
+				end
+			end
+		end
+	end
+end

@@ -1,3 +1,15 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.5.18
+Date: 30. 10. 2026
+  Features:
+    - Add a startup hard mode setting that doubles void miner and well power use and crafting ingredients.
+---------------------------------------------------------------------------------------------------
+
+Version: 2.5.17
+Date: 2026-10-30
+  Changes:
+	-Updated the BZ Aluminium integration to use the bzaluminium2 mod ID
+---------------------------------------------------------------------------------------------------
 Version: 2.5.16
 Date: 2026-10-30
   Changes:

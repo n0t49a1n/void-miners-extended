@@ -16,8 +16,8 @@ end
 if mods["bzcarbon"] then
 	require("prototypes.mods.bzcarbon.recipies") --Recipes
 end
-if mods["bzaluminum"] then
-	require("prototypes.mods.bzaluminum.recipies") --Recipes
+if mods["bzaluminum2"] then
+	require("prototypes.mods.bzaluminum2.recipies") --Recipes
 end
 if mods["bztin"] then
 	require("prototypes.mods.bztin.recipies") --Recipes
