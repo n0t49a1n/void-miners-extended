@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.22
+Date: 30. 10. 2026
+  Changes:
+    - Use the bzaluminum2 mod ID and remove the legacy Void Miners conflict.
+
+---------------------------------------------------------------------------------------------------
 Version: 2.5.21
 Date: 30. 10. 2026
   Bugfixes:
@@ -32,7 +38,7 @@ Date: 30. 10. 2026
 Version: 2.5.17
 Date: 2026-10-30
   Changes:
-	-Updated the BZ Aluminium integration to use the bzaluminium2 mod ID
+	-Updated the BZ Aluminium integration to use the bzaluminum2 mod ID
 ---------------------------------------------------------------------------------------------------
 Version: 2.5.16
 Date: 2026-10-30
