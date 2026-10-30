@@ -1,11 +1,11 @@
-local space_void_well = {
-	name = "space_void_well",
+local se_void_well = {
+	name = "se_void_well",
 	icon = "__void-miners-extended__/graphics/icons/void-well.png",
 	icon_size = 32,
 	--order
 	type = "assembling-machine",
 	max_health = 300,
-	minable = {mining_time = 0.3, result = "space_void_well"},
+	minable = {mining_time = 0.3, result = "se_void_well"},
 	animation = {
 		filename = "__void-miners-extended__/graphics/entity/void-well/void-well.png",
 		priority = "high",
@@ -32,26 +32,20 @@ local space_void_well = {
 	flags = {"placeable-player", "player-creation"},
 	collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
 	selection_box = {{-1, -1}, {1, 1}},
-	collision_mask = {
-      "water-tile",
-      "ground-tile",
-      "item-layer",
-      "object-layer",
-      "player-layer",
-    },
+	collision_mask = { layers = { water_tile = true, ground_tile = true, item = true, object = true, player = true } },
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	fluid_boxes = {{
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
+        volume = 1000,
         pipe_connections = {{
-            type = "output",
-            position = {0.5, 1.5}
+            flow_direction = "output",
+            direction = defines.direction.south,
+            position = {0.5, 0.5}
         }}
     }},
 	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-k2","void-well-mining-se"},
@@ -96,26 +90,20 @@ local deep_void_well = {
 	flags = {"placeable-player", "player-creation"},
 	collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
 	selection_box = {{-1, -1}, {1, 1}},
-	collision_mask = {
-      "water-tile",
-      "ground-tile",
-      "item-layer",
-      "object-layer",
-      "player-layer",
-    },
+	collision_mask = { layers = { water_tile = true, ground_tile = true, item = true, object = true, player = true } },
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	fluid_boxes = {{
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
+        volume = 1000,
         pipe_connections = {{
-            type = "output",
-            position = {0.5, 1.5}
+            flow_direction = "output",
+            direction = defines.direction.south,
+            position = {0.5, 0.5}
         }}
     }},
 	crafting_categories = {"void-well-mining-k2","void-well-mining-se"},
@@ -124,24 +112,23 @@ local deep_void_well = {
 	fast_replaceable_group = "void-miners",
 	module_specification = nil,
 	allowed_effects = nil,
-	next_upgrade = "",
 }
- local space_void_miner = {
-	name = "space_void_miner",
-	icon = "__void-miners-extended__/graphics/icons/space-void-miner.png",
+ local se_void_miner = {
+	name = "se_void_miner",
+	icon = "__void-miners-extended__/graphics/icons/se-void-miner.png",
 	icon_size = 64,
 	--order
 	type = "assembling-machine",
 	max_health = 500,
-	minable = {mining_time = 0.3, result = "space_void_miner"},
+	minable = {mining_time = 0.3, result = "se_void_miner"},
 	animation = {
 		animation_speed = 0.9,
-		filename = "__void-miners-extended__/graphics/entity/space-void-miner/space-void-miner.png",
+		filename = "__void-miners-extended__/graphics/entity/se-void-miner/se-void-miner.png",
 		priority = "high",
 		height = 122,
 		hr_version = {
 			animation_speed = 0.9,
-			filename = "__void-miners-extended__/graphics/entity/space-void-miner/hr-space-void-miner.png",
+			filename = "__void-miners-extended__/graphics/entity/se-void-miner/hr-se-void-miner.png",
 			priority = "high",
 			height = 242,
 			width = 365,
@@ -168,13 +155,7 @@ local deep_void_well = {
 	flags = {"placeable-player", "player-creation"},
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-	collision_mask = {
-      "water-tile",
-      "ground-tile",
-      "item-layer",
-      "object-layer",
-      "player-layer",
-    },
+	collision_mask = { layers = { water_tile = true, ground_tile = true, item = true, object = true, player = true } },
 	module_specification = {
 		module_slots = 4,
     },
@@ -182,7 +163,7 @@ local deep_void_well = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	crafting_categories = {"void-mining","void-mining-bz","void-mining-k2","void-mining-se"},
 	fast_replaceable_group = "void-miners",
@@ -233,13 +214,7 @@ local deep_void_miner = {
 	flags = {"placeable-player", "player-creation"},
 	collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 	selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-	collision_mask = {
-      "water-tile",
-      "ground-tile",
-      "item-layer",
-      "object-layer",
-      "player-layer",
-    },
+	collision_mask = { layers = { water_tile = true, ground_tile = true, item = true, object = true, player = true } },
 	module_specification = {
 		module_slots = 4,
     },
@@ -247,18 +222,25 @@ local deep_void_miner = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	crafting_categories = {"void-mining-k2","void-mining-se"},
 	fast_replaceable_group = "void-miners",
 	crafting_speed = 2.5,
 	energy_usage = "216MW",
 	result_inventory_size = 1,
-	next_upgrade = "",
 }
     data:extend({
-	space_void_well,
+	se_void_well,
 	deep_void_well,
-	space_void_miner,
+	se_void_miner,
 	deep_void_miner,
     })
+
+
+
+
+
+
+
+

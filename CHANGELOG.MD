@@ -1,3 +1,106 @@
+Version: 2.5.16
+Date: 2026-10-30
+  Changes:
+	-Added locale names and descriptions for Space Age miners and wells
+---------------------------------------------------------------------------------------------------
+Version: 2.5.15
+Date: 2026-10-30
+  Changes:
+	-Renamed Space Exploration miner and well display names to SE Miner and SE Well
+	-Renamed deep-tier item and technology display names
+---------------------------------------------------------------------------------------------------
+Version: 2.5.14
+Date: 2026-10-30
+  Changes:
+	-Fixed Space Exploration miner icon and entity sprite paths to use se-void-miner assets
+---------------------------------------------------------------------------------------------------
+Version: 2.5.13
+Date: 2026-10-30
+  Changes:
+	-Renamed remaining Space Exploration miner icon and sprite references to se-void-miner
+	-Updated Space Exploration locale keys to the se_void identifiers
+---------------------------------------------------------------------------------------------------
+Version: 2.5.12
+Date: 2026-10-30
+  Changes:
+	-Replaced obsolete recipe result fields with results arrays
+---------------------------------------------------------------------------------------------------
+Version: 2.5.11
+Date: 2026-10-30
+  Changes:
+	-Migrated recipe ingredients to Factorio 2.1 ingredient dictionaries
+	-Retained tuple ingredients for technology research packs
+---------------------------------------------------------------------------------------------------
+Version: 2.5.10
+Date: 2026-10-30
+  Changes:
+	-Migrated all recipe prototypes to the Factorio 2.1 categories field
+---------------------------------------------------------------------------------------------------
+Version: 2.5.9
+Date: 2026-10-30
+  Changes:
+	-Removed empty next_upgrade references from terminal miner and well prototypes
+---------------------------------------------------------------------------------------------------
+Version: 2.5.8
+Date: 2026-10-30
+  Changes:
+	-Changed energy source emissions to Factorio 2.1 pollutant dictionaries
+---------------------------------------------------------------------------------------------------
+Version: 2.5.7
+Date: 2026-10-30
+  Changes:
+	-Moved well fluid pipe connections inside machine collision boxes
+---------------------------------------------------------------------------------------------------
+Version: 2.5.6
+Date: 2026-10-30
+  Changes:
+	-Updated well pipe connections to the Factorio 2.1 connection format
+---------------------------------------------------------------------------------------------------
+Version: 2.5.5
+Date: 2026-10-30
+  Changes:
+	-Updated well fluid boxes to use Factorio 2.1 volume fields
+---------------------------------------------------------------------------------------------------
+Version: 2.5.4
+Date: 2026-10-30
+  Changes:
+	-Updated Space Exploration machine collision masks for Factorio 2.1
+---------------------------------------------------------------------------------------------------
+Version: 2.5.3
+Date: 2026-10-30
+  Changes:
+	-Recolored Space Age miner sprite sheets orange while preserving frame positions and shadows
+---------------------------------------------------------------------------------------------------
+Version: 2.5.2
+Date: 2026-10-30
+  Changes:
+	-Renamed the Space Exploration miner technology icon to se-void-mining.png
+	-Added an orange Space Age miner technology icon variant
+---------------------------------------------------------------------------------------------------
+Version: 2.5.1
+Date: 2026-10-30
+  Changes:
+	-Moved base prototypes under prototypes/mods/base for consistent integration structure
+---------------------------------------------------------------------------------------------------
+Version: 2.5.0
+Date: 2026-10-30
+  Changes:
+	-Added Space Age machines, mining recipes, and technology
+	-Retained only ore, raw mineral, and naturally sourced fluid recipes
+	-Renamed Space Exploration machines to se_void_well and se_void_miner
+---------------------------------------------------------------------------------------------------
+Version: 2.4.0
+Date: 2026-10-30
+  Changes:
+	-Updated mod metadata for Factorio 2.1
+	-Updated the base dependency to Factorio 2.1
+	-Added optional Space Age resource recipes
+---------------------------------------------------------------------------------------------------
+Version: 2.3.1
+Date: 2023-10-11
+  Changes:
+	-adding new py fluids/ores
+---------------------------------------------------------------------------------------------------
 Version: 2.3.0
 Date: 2023-10-11
   Changes:
@@ -50,7 +153,7 @@ Date: 2022-10-27
 Version: 2.0.3
 Date: 2022-10-24
   Changes:
-	-fixed downgrade from deep to space miner
+	-fixed downgrade from deep tier to SE miner
 	-small fixes with se prefix
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.2
@@ -118,3 +221,5 @@ Date: 2022-03-4
   Changes:
     -Now Loads
 ---------------------------------------------------------------------------------------------------
+
+

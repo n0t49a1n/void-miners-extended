@@ -45,3 +45,11 @@ if mods["pypostprocessing"] then
 	require("prototypes.mods.pyanodons.entities") --Entities
 	require("prototypes.mods.pyanodons.recipes") --Recipes
 end
+
+-- Space Age resources
+if mods["space-age"] then
+	require("prototypes.mods.space-age.items") -- Items
+	require("prototypes.mods.space-age.entities") -- Entities
+	require("prototypes.mods.space-age.recipes") -- Recipes
+	require("prototypes.mods.space-age.technology") -- Technology
+end

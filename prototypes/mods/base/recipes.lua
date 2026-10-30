@@ -1,5 +1,5 @@
 local water = {
-	category = "void-well-mining",
+	categories = {"void-well-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -15,7 +15,7 @@ local water = {
 	subgroup = "void-well-mining",
 }
 local oil = {
-	category = "void-well-mining",
+	categories = {"void-well-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -31,7 +31,7 @@ local oil = {
 	subgroup = "void-well-mining",
 }
 local light_oil = {
-	category = "void-well-mining",
+	categories = {"void-well-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -47,7 +47,7 @@ local light_oil = {
 	subgroup = "void-well-mining",
 }
 local heavy_oil = {
-	category = "void-well-mining",
+	categories = {"void-well-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -63,7 +63,7 @@ local heavy_oil = {
 	subgroup = "void-well-mining",
 }
 local lubricant = {
-	category = "void-well-mining",
+	categories = {"void-well-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -79,7 +79,7 @@ local lubricant = {
 	subgroup = "void-well-mining",
 }
 local petroleum_gas = {
-	category = "void-well-mining",
+	categories = {"void-well-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -95,7 +95,7 @@ local petroleum_gas = {
 	subgroup = "void-well-mining",
 }
 local sulfuric_acid = {
-	category = "void-well-mining",
+	categories = {"void-well-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -111,7 +111,7 @@ local sulfuric_acid = {
 	subgroup = "void-well-mining",
 }
 local steam = {
-	category = "void-well-mining",
+	categories = {"void-well-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -130,47 +130,47 @@ local basic_void_well = {
 	enabled = false,
 	energy_required = 10,
 	ingredients = {
-		{"electronic-circuit", 10},
-		{"steel-plate", 10},
-		{"iron-gear-wheel", 10},
-		{"offshore-pump", 5}
+		{type = "item", name = "electronic-circuit", amount = 10},
+		{type = "item", name = "steel-plate", amount = 10},
+		{type = "item", name = "iron-gear-wheel", amount = 10},
+		{type = "item", name = "offshore-pump", amount = 5}
 	},
 	order = "a",
 	name = "basic_void_well",
-	result = "basic_void_well",
+	results = {{type = "item", name = "basic_void_well", amount = 1}},
 	type = "recipe",
 }
 local refined_void_well = {
 	enabled = false,
 	energy_required = 10,
 	ingredients = {
-		{"advanced-circuit", 50},
-		{"steel-plate", 50},
-		{"electric-engine-unit", 50},
-		{"basic_void_well", 5}
+		{type = "item", name = "advanced-circuit", amount = 50},
+		{type = "item", name = "steel-plate", amount = 50},
+		{type = "item", name = "electric-engine-unit", amount = 50},
+		{type = "item", name = "basic_void_well", amount = 5}
 	},
 	order = "b",
 	name = "refined_void_well",
-	result = "refined_void_well",
+	results = {{type = "item", name = "refined_void_well", amount = 1}},
 	type = "recipe",
 }
 local advanced_void_well = {
 	enabled = false,
 	energy_required = 30,
 	ingredients = {
-		{"processing-unit", 50},
-		{"steel-plate", 100},
-		{"rocket-control-unit", 10},
-		{"refined_void_well", 1}
+		{type = "item", name = "processing-unit", amount = 50},
+		{type = "item", name = "steel-plate", amount = 100},
+		{type = "item", name = "rocket-control-unit", amount = 10},
+		{type = "item", name = "refined_void_well", amount = 1}
 	},
 	order = "c",
 	name = "advanced_void_well",
-	result = "advanced_void_well",
+	results = {{type = "item", name = "advanced_void_well", amount = 1}},
 	type = "recipe",
 }
 ----------Wood------------
 local wood = {
-	category = "void-mining",
+	categories = {"void-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -188,7 +188,7 @@ local wood = {
 
 ----------Coal------------
 local coal = {
-	category = "void-mining",
+	categories = {"void-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -206,7 +206,7 @@ local coal = {
 
 ----------Stone------------
 local stone = {
-	category = "void-mining",
+	categories = {"void-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 4,
@@ -224,7 +224,7 @@ local stone = {
 
 ----------Iron Ore------------
 local iron_ore = {
-	category = "void-mining",
+	categories = {"void-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -242,7 +242,7 @@ local iron_ore = {
 
 ----------Copper Ore------------
 local copper_ore = {
-	category = "void-mining",
+	categories = {"void-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -259,7 +259,7 @@ local copper_ore = {
 }
 ----------Uranium Ore------------
 local uranium_ore = {
-	category = "void-mining",
+	categories = {"void-mining"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -279,42 +279,42 @@ local basic_void_miner = {
 	enabled = false,
 	energy_required = 10,
 	ingredients = {
-		{"electronic-circuit", 10},
-		{"steel-plate", 10},
-		{"iron-gear-wheel", 10},
-		{"electric-mining-drill", 5}
+		{type = "item", name = "electronic-circuit", amount = 10},
+		{type = "item", name = "steel-plate", amount = 10},
+		{type = "item", name = "iron-gear-wheel", amount = 10},
+		{type = "item", name = "electric-mining-drill", amount = 5}
 	},
 	order = "a",
 	name = "basic_void_miner",
-	result = "basic_void_miner",
+	results = {{type = "item", name = "basic_void_miner", amount = 1}},
 	type = "recipe",
 }
 local refined_void_miner = {
 	enabled = false,
 	energy_required = 60,
 	ingredients = {
-		{"advanced-circuit", 50},
-		{"steel-plate", 50},
-		{"electric-engine-unit", 50},
-		{"basic_void_miner", 1},
+		{type = "item", name = "advanced-circuit", amount = 50},
+		{type = "item", name = "steel-plate", amount = 50},
+		{type = "item", name = "electric-engine-unit", amount = 50},
+		{type = "item", name = "basic_void_miner", amount = 1},
 	},
 	order = "b",
 	name = "refined_void_miner",
-	result = "refined_void_miner",
+	results = {{type = "item", name = "refined_void_miner", amount = 1}},
 	type = "recipe",
 }
 local advanced_void_miner = {
 	enabled = false,
 	energy_required = 30,
 	ingredients = {
-		{"processing-unit", 50},
-		{"steel-plate", 100},
-		{"rocket-control-unit", 10},
-		{"refined_void_miner", 1}
+		{type = "item", name = "processing-unit", amount = 50},
+		{type = "item", name = "steel-plate", amount = 100},
+		{type = "item", name = "rocket-control-unit", amount = 10},
+		{type = "item", name = "refined_void_miner", amount = 1}
 	},
 	order = "c",
 	name = "advanced_void_miner",
-	result = "advanced_void_miner",
+	results = {{type = "item", name = "advanced_void_miner", amount = 1}},
 	type = "recipe",
 }
 data:extend({
@@ -339,3 +339,7 @@ data:extend({
 	refined_void_miner,
 	advanced_void_miner,
 	})
+
+
+
+

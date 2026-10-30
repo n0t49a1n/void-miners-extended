@@ -1,5 +1,5 @@
 require("prototypes.catergory") -- Catergory
-require("prototypes.technology") -- Technology
-require("prototypes.item.items") -- Items
-require("prototypes.entity.entities") --Entities
-require("prototypes.recipe.recipes") --Recipes
+require("prototypes.mods.base.technology") -- Technology
+require("prototypes.mods.base.items") -- Items
+require("prototypes.mods.base.entities") -- Entities
+require("prototypes.mods.base.recipes") -- Recipes

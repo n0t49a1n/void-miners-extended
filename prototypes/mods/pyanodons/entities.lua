@@ -34,16 +34,16 @@ local py_void_well = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	fluid_boxes = {{
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
+        volume = 1000,
         pipe_connections = {{
-            type = "output",
-            position = {0.5, 1.5}
+            flow_direction = "output",
+            direction = defines.direction.south,
+            position = {0.5, 0.5}
         }}
     }},
 	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-py"},
@@ -52,7 +52,6 @@ local py_void_well = {
 	fast_replaceable_group = "void-miners",
 	module_specification = nil,
 	allowed_effects = nil,
-	next_upgrade = "",
 }
  local py_void_miner = {
 	name = "py_void_miner",
@@ -103,16 +102,21 @@ local py_void_well = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	crafting_categories = {"void-mining","void-mining-bz","void-mining-py"},
 	fast_replaceable_group = "void-miners",
 	crafting_speed = 2,
 	energy_usage = "108MW",
 	result_inventory_size = 1,
-	next_upgrade = "",
 }
     data:extend({
 	py_void_well,
 	py_void_miner,
     })
+
+
+
+
+
+

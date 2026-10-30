@@ -1,6 +1,6 @@
 ----------aluminum ore------------
 local aluminum_ore = {
-	category = "void-mining-bz",
+	categories = {"void-mining-bz"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -18,3 +18,6 @@ local aluminum_ore = {
 data:extend({
 	aluminum_ore
 })
+
+
+

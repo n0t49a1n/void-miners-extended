@@ -1,11 +1,11 @@
---------Space Void Well--------
-local space_void_well = {
+--------SE Void Well--------
+local se_void_well = {
 	effects = {
-		{type = "unlock-recipe", recipe = "space_void_well"},
+		{type = "unlock-recipe", recipe = "se_void_well"},
 	},
 	icon = "__void-miners-extended__/graphics/technology/void-well-mining.png",
 	icon_size = 64,
-	name = "space_void_well_mining",
+	name = "se_void_well_mining",
 	--order
 	prerequisites = {"advanced_void_well_mining"},
 	type = "technology",
@@ -31,7 +31,7 @@ local deep_void_well = {
 	icon_size = 64,
 	name = "deep_void_well_mining",
 	--order
-	prerequisites = {"space_void_well_mining"},
+	prerequisites = {"se_void_well_mining"},
 	type = "technology",
 	unit = {
 		count = 1000,
@@ -47,14 +47,14 @@ local deep_void_well = {
 		time = 30
 	},
 }
---------Space Void Ore Miner--------
-local space_void_miner = {
+--------SE Void Miner--------
+local se_void_miner = {
 	effects = {
-		{type = "unlock-recipe", recipe = "space_void_miner"},
+		{type = "unlock-recipe", recipe = "se_void_miner"},
 	},
-	icon = "__void-miners-extended__/graphics/technology/space-void-mining.png",
+	icon = "__void-miners-extended__/graphics/technology/se-void-mining.png",
 	icon_size = 128,
-	name = "space_void_mining",
+	name = "se_void_mining",
 	--order
 	prerequisites = {"advanced_void_mining"},
 	type = "technology",
@@ -81,7 +81,7 @@ local deep_void_miner = {
 	icon_size = 128,
 	name = "deep_void_mining",
 	--order
-	prerequisites = {"space_void_mining"},
+	prerequisites = {"se_void_mining"},
 	type = "technology",
 	unit = {
 		count = 1000,
@@ -98,8 +98,14 @@ local deep_void_miner = {
 	},
 }
 	data:extend({
-	space_void_miner,
-	space_void_well,
+	se_void_miner,
+	se_void_well,
 	deep_void_miner,
 	deep_void_well,
 	})
+
+
+
+
+
+

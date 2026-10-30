@@ -36,24 +36,24 @@ local py_void_well = {
 	enabled = true,
 	energy_required = 2,
 	ingredients = {
-		{"electronic-circuit", 20},
-		{"advanced_void_well", 1},
+		{type = "item", name = "electronic-circuit", amount = 20},
+		{type = "item", name = "advanced_void_well", amount = 1},
 	},
 	order = "d",
 	name = "py_void_well",
-	result = "py_void_well",
+	results = {{type = "item", name = "py_void_well", amount = 1}},
 	type = "recipe",
 }
 local py_void_miner = {
 	enabled = true,
 	energy_required = 2,
 	ingredients = {
-		{"electronic-circuit", 20},
-		{"advanced_void_miner", 1},
+		{type = "item", name = "electronic-circuit", amount = 20},
+		{type = "item", name = "advanced_void_miner", amount = 1},
 	},
 	order = "d",
 	name = "py_void_miner",
-	result = "py_void_miner",
+	results = {{type = "item", name = "py_void_miner", amount = 1}},
 	type = "recipe",
 }
 data:extend({
@@ -65,3 +65,7 @@ data:extend({
 	--fluids
 	--methane_gas
 })
+
+
+
+

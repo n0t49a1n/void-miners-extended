@@ -34,16 +34,16 @@ local basic_void_well = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	fluid_boxes = {{
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
+        volume = 1000,
         pipe_connections = {{
-            type = "output",
-            position = {0.5, 1.5}
+            flow_direction = "output",
+            direction = defines.direction.south,
+            position = {0.5, 0.5}
         }}
     }},
 	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-k2"},
@@ -90,16 +90,16 @@ local refined_void_well = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	fluid_boxes = {{
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
+        volume = 1000,
         pipe_connections = {{
-            type = "output",
-            position = {0.5, 1.5}
+            flow_direction = "output",
+            direction = defines.direction.south,
+            position = {0.5, 0.5}
         }}
     }},
 	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-k2"},
@@ -146,16 +146,16 @@ local advanced_void_well = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	fluid_boxes = {{
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
+        volume = 1000,
         pipe_connections = {{
-            type = "output",
-            position = {0.5, 1.5}
+            flow_direction = "output",
+            direction = defines.direction.south,
+            position = {0.5, 0.5}
         }}
     }},
 	crafting_categories = {"void-well-mining","void-well-mining-bz","void-well-mining-k2"},
@@ -164,7 +164,6 @@ local advanced_void_well = {
 	fast_replaceable_group = "void-miners",
 	module_specification = nil,
 	allowed_effects = nil,
-	next_upgrade = "",
 }
 local basic_void_miner = {
 	name = "basic_void_miner",
@@ -210,7 +209,7 @@ local basic_void_miner = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	crafting_categories = {"void-mining","void-mining-bz","void-mining-k2"},
 	crafting_speed = 0.25,
@@ -272,7 +271,7 @@ local refined_void_miner = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	crafting_categories = {"void-mining","void-mining-bz","void-mining-k2"},
 	crafting_speed = 0.5,
@@ -334,7 +333,7 @@ local advanced_void_miner = {
 	energy_source = {
 		type = "electric",
 		usage_priority = "secondary-input",
-		emissions_per_minute = 1,
+		emissions_per_minute = { pollution = 1 },
 	},
 	crafting_categories = {"void-mining","void-mining-bz","void-mining-k2"},
 	crafting_speed = 0.75,
@@ -342,7 +341,6 @@ local advanced_void_miner = {
 	result_inventory_size = 1,
 	source_inventory_size = 1,
 	fast_replaceable_group = "void-miners",
-	next_upgrade = "",
 } 
 data:extend({
 	basic_void_well,
@@ -352,3 +350,9 @@ data:extend({
 	refined_void_miner,
 	advanced_void_miner,
 })
+
+
+
+
+
+

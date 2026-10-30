@@ -28,7 +28,7 @@ local advanced_void_well = {
     subgroup = "extraction-machine",
     type = "item"
 }
---space well
+--SE well
 --order = "c-d",
 --deep well
 --order = "c-e",
@@ -62,7 +62,7 @@ local advanced_void_miner = {
     subgroup = "extraction-machine",
     type = "item",
 }
---space well
+--SE well
 --order = "c-i",
 --deep well
 --order = "c-j",
@@ -74,3 +74,7 @@ data:extend({
 	refined_void_miner,
 	advanced_void_miner,
 	})
+
+
+
+

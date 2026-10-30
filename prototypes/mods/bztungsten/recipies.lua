@@ -1,6 +1,6 @@
 ----------tungsten ore------------
 local tungsten_ore = {
-	category = "void-mining-bz",
+	categories = {"void-mining-bz"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 10,
@@ -18,3 +18,6 @@ local tungsten_ore = {
 data:extend({
 	tungsten_ore
 })
+
+
+

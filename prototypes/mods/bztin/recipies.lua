@@ -1,6 +1,6 @@
 ----------tin ore------------
 local tin_ore = {
-	category = "void-mining-bz",
+	categories = {"void-mining-bz"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -18,3 +18,6 @@ local tin_ore = {
 data:extend({
 	tin_ore
 })
+
+
+

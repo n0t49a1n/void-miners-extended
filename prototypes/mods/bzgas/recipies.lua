@@ -1,6 +1,6 @@
 ----------Gas------------
 local gas = {
-	category = "void-well-mining-bz",
+	categories = {"void-well-mining-bz"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 1,
@@ -18,3 +18,7 @@ local gas = {
 data:extend({
 	gas,
 })
+
+
+
+

@@ -1,6 +1,6 @@
 ----------Flake Graphite------------
 local flake_graphite = {
-	category = "void-mining-bz",
+	categories = {"void-mining-bz"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 2,
@@ -18,3 +18,6 @@ local flake_graphite = {
 data:extend({
 	flake_graphite
 })
+
+
+

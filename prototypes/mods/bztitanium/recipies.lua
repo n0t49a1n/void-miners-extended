@@ -1,6 +1,6 @@
 ----------Titanium ore------------
 local titanium_ore = {
-	category = "void-mining-bz",
+	categories = {"void-mining-bz"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 10,
@@ -18,3 +18,7 @@ local titanium_ore = {
 data:extend({
 	titanium_ore
 })
+
+
+
+
