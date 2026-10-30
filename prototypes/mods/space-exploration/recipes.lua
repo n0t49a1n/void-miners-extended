@@ -208,12 +208,12 @@ local deep_void_miner = {
 	type = "recipe",
 }
 local methane_gas = {
-	categories = {"void-mining-se"},
+	categories = {"void-well-mining-se"},
 	enabled = true,
 	hide_from_player_crafting = true,
 	energy_required = 5,
 	ingredients = {},
-	name = "void-mining-methane-gas",
+	name = "void-well-mining-methane-gas",
 	order = "q",
 	results = {
 		{name = "se-methane-gas", amount = 5, type = "fluid"}
