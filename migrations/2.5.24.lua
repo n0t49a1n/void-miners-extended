@@ -1,7 +1,7 @@
 -- Apply research-controlled machine unlocks to existing saves.
 local unlocks = {
-    se_void_miner = "se_void_mining",
-    deep_void_miner = "deep_void_mining",
+    se_void_miner = "se_void_miner",
+    deep_void_miner = "deep_void_miner",
     se_void_well = "se_void_well",
     deep_void_well = "deep_void_well",
 }

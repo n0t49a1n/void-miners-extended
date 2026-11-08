@@ -27,9 +27,9 @@ local py_void_miner = {
 	},
 	icon = "__void-miners-extended__/graphics/technology/py-void-mining.png",
 	icon_size = 128,
-	name = "py_void_mining",
+	name = "py_void_miner",
 	--order
-	prerequisites = {"advanced_void_mining"},
+	prerequisites = {"advanced_void_miner"},
 	type = "technology",
 	unit = {
 		count = 1000,

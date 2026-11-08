@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.27
+Date: 08. 11. 2026
+  Changes:
+    - Rename miner technology IDs from void_mining to void_miner and preserve existing research.
+
+---------------------------------------------------------------------------------------------------
 Version: 2.5.26
 Date: 08. 11. 2026
   Bugfixes:

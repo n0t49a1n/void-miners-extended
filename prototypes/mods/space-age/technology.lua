@@ -10,7 +10,7 @@ local sa_void_well = {
 }
 local sa_void_miner = {
     type = "technology",
-    name = "sa_void_mining",
+    name = "sa_void_miner",
     icon = "__void-miners-extended__/graphics/technology/sa-void-mining.png",
     icon_size = 128,
     prerequisites = {"planet-discovery-fulgora"},
