@@ -5,7 +5,7 @@ local basic_void_well = {
 	},
 	icon = "__void-miners-extended__/graphics/technology/void-well-mining.png",
 	icon_size = 64,
-	name = "basic_void_well_mining",
+	name = "basic_void_well",
 	--order
 	prerequisites = {"steel-processing", "electronics"},
 	type = "technology",
@@ -25,9 +25,9 @@ local refined_void_well = {
 	},
 	icon = "__void-miners-extended__/graphics/technology/void-well-mining.png",
 	icon_size = 64,
-	name = "refined_void_well_mining",
+	name = "refined_void_well",
 	--order
-	prerequisites = {"basic_void_well_mining"},
+	prerequisites = {"basic_void_well"},
 	type = "technology",
 	unit = {
 		count = 300,
@@ -46,9 +46,9 @@ local advanced_void_well = {
 	},
 	icon = "__void-miners-extended__/graphics/technology/void-well-mining.png",
 	icon_size = 64,
-	name = "advanced_void_well_mining",
+	name = "advanced_void_well",
 	--order
-	prerequisites = {"refined_void_well_mining"},
+	prerequisites = {"refined_void_well"},
 	type = "technology",
 	unit = {
 		count = 1000,

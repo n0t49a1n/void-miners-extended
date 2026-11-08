@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.5.26
+Date: 08. 11. 2026
+  Bugfixes:
+    - Remove Miner from all well research names.
+    - Rename well technology IDs without the mining suffix and preserve existing research.
+
+---------------------------------------------------------------------------------------------------
 Version: 2.5.25
 Date: 08. 11. 2026
   Changes:

@@ -1,7 +1,7 @@
 -- Space Age machine unlocks
 local sa_void_well = {
     type = "technology",
-    name = "sa_void_well_mining",
+    name = "sa_void_well",
     icon = "__void-miners-extended__/graphics/technology/void-well-mining.png",
     icon_size = 64,
     prerequisites = {"planet-discovery-fulgora"},

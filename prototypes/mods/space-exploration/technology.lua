@@ -5,9 +5,9 @@ local se_void_well = {
 	},
 	icon = "__void-miners-extended__/graphics/technology/void-well-mining.png",
 	icon_size = 64,
-	name = "se_void_well_mining",
+	name = "se_void_well",
 	--order
-	prerequisites = {"advanced_void_well_mining"},
+	prerequisites = {"advanced_void_well"},
 	type = "technology",
 	unit = {
 		count = 1000,
@@ -29,9 +29,9 @@ local deep_void_well = {
 	},
 	icon = "__void-miners-extended__/graphics/technology/void-well-mining.png",
 	icon_size = 64,
-	name = "deep_void_well_mining",
+	name = "deep_void_well",
 	--order
-	prerequisites = {"se_void_well_mining", "se-deep-space-science-pack-1"},
+	prerequisites = {"se_void_well", "se-deep-space-science-pack-1"},
 	type = "technology",
 	unit = {
 		count = 1000,

@@ -1,0 +1,32 @@
+{
+  "technology": [
+    [
+      "basic_void_well_mining",
+      "basic_void_well"
+    ],
+    [
+      "refined_void_well_mining",
+      "refined_void_well"
+    ],
+    [
+      "advanced_void_well_mining",
+      "advanced_void_well"
+    ],
+    [
+      "se_void_well_mining",
+      "se_void_well"
+    ],
+    [
+      "deep_void_well_mining",
+      "deep_void_well"
+    ],
+    [
+      "sa_void_well_mining",
+      "sa_void_well"
+    ],
+    [
+      "py_void_well_mining",
+      "py_void_well"
+    ]
+  ]
+}

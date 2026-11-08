@@ -2,8 +2,8 @@
 local unlocks = {
     se_void_miner = "se_void_mining",
     deep_void_miner = "deep_void_mining",
-    se_void_well = "se_void_well_mining",
-    deep_void_well = "deep_void_well_mining",
+    se_void_well = "se_void_well",
+    deep_void_well = "deep_void_well",
 }
 for _, force in pairs(game.forces) do
     for recipe_name, technology_name in pairs(unlocks) do

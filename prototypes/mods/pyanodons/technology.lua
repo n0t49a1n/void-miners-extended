@@ -5,9 +5,9 @@ local py_void_well = {
 	},
 	icon = "__void-miners-extended__/graphics/technology/void-well-mining.png",
 	icon_size = 64,
-	name = "py_void_well_mining",
+	name = "py_void_well",
 	--order
-	prerequisites = {"advanced_void_well_mining"},
+	prerequisites = {"advanced_void_well"},
 	type = "technology",
 	unit = {
 		count = 1000,
