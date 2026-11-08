@@ -160,7 +160,7 @@ local advanced_void_well = {
 	ingredients = {
 		{type = "item", name = "processing-unit", amount = 50},
 		{type = "item", name = "steel-plate", amount = 100},
-		{type = "item", name = "rocket-control-unit", amount = 10},
+		{type = "item", name = "low-density-structure", amount = 10},
 		{type = "item", name = "refined_void_well", amount = 1}
 	},
 	order = "c",
@@ -309,7 +309,7 @@ local advanced_void_miner = {
 	ingredients = {
 		{type = "item", name = "processing-unit", amount = 50},
 		{type = "item", name = "steel-plate", amount = 100},
-		{type = "item", name = "rocket-control-unit", amount = 10},
+		{type = "item", name = "low-density-structure", amount = 10},
 		{type = "item", name = "refined_void_miner", amount = 1}
 	},
 	order = "c",
