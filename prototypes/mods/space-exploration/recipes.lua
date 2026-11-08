@@ -152,7 +152,7 @@ local naquium_ore = {
 	subgroup = "void-mining",
 }
 local se_void_well = {
-	enabled = true,
+	enabled = false,
 	energy_required = 2,
 	ingredients = {
 		{type = "item", name = "se-quantum-processor", amount = 20},
@@ -166,7 +166,7 @@ local se_void_well = {
 	type = "recipe",
 }
 local deep_void_well = {
-	enabled = true,
+	enabled = false,
 	energy_required = 2,
 	ingredients = {
 		{type = "item", name = "se-naquium-processor", amount = 5},
@@ -180,7 +180,7 @@ local deep_void_well = {
 	type = "recipe",
 }
 local se_void_miner = {
-	enabled = true,
+	enabled = false,
 	energy_required = 2,
 	ingredients = {
 		{type = "item", name = "se-quantum-processor", amount = 20},
@@ -194,7 +194,7 @@ local se_void_miner = {
 	type = "recipe",
 }
 local deep_void_miner = {
-	enabled = true,
+	enabled = false,
 	energy_required = 2,
 	ingredients = {
 		{type = "item", name = "se-naquium-processor", amount = 5},
