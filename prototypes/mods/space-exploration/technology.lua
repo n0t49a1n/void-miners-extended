@@ -31,7 +31,7 @@ local deep_void_well = {
 	icon_size = 64,
 	name = "deep_void_well_mining",
 	--order
-	prerequisites = {"se_void_well_mining"},
+	prerequisites = {"se_void_well_mining", "se-deep-space-science-pack-1"},
 	type = "technology",
 	unit = {
 		count = 1000,
@@ -43,6 +43,7 @@ local deep_void_well = {
 			{"se-astronomic-science-pack-1", 1},
 			{"se-energy-science-pack-1", 1},
 			{"se-material-science-pack-1", 1},
+			{"se-deep-space-science-pack-1", 1},
 		},
 		time = 30
 	},
@@ -81,7 +82,7 @@ local deep_void_miner = {
 	icon_size = 128,
 	name = "deep_void_mining",
 	--order
-	prerequisites = {"se_void_mining"},
+	prerequisites = {"se_void_mining", "se-deep-space-science-pack-1"},
 	type = "technology",
 	unit = {
 		count = 1000,
@@ -93,6 +94,7 @@ local deep_void_miner = {
 			{"se-astronomic-science-pack-1", 1},
 			{"se-energy-science-pack-1", 1},
 			{"se-material-science-pack-1", 1},
+			{"se-deep-space-science-pack-1", 1},
 		},
 		time = 30
 	},
